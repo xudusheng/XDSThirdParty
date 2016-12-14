@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		477889F684FCABF49203857A /* libPods-XDSThirdParty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 910CC6469133200DA84FADA7 /* libPods-XDSThirdParty.a */; };
+		A269A01C1E0153140083B333 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A269A01B1E0153140083B333 /* main.m */; };
+		A269A01F1E0153140083B333 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A269A01E1E0153140083B333 /* AppDelegate.m */; };
+		A269A0251E0153140083B333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A269A0231E0153140083B333 /* Main.storyboard */; };
+		A269A0271E0153140083B333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A269A0261E0153140083B333 /* Assets.xcassets */; };
+		A269A02A1E0153140083B333 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A269A0281E0153140083B333 /* LaunchScreen.storyboard */; };
+		A269A0371E0154350083B333 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A269A0361E0154350083B333 /* MainTableViewController.m */; };
+		A269A03A1E0155540083B333 /* iCarouselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A269A0391E0155540083B333 /* iCarouselViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B67D5563E0CE7BEBC1CF8B4 /* Pods-XDSThirdParty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDSThirdParty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XDSThirdParty/Pods-XDSThirdParty.debug.xcconfig"; sourceTree = "<group>"; };
+		910CC6469133200DA84FADA7 /* libPods-XDSThirdParty.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XDSThirdParty.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		960AA33AC422DE470F89258C /* Pods-XDSThirdParty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDSThirdParty.release.xcconfig"; path = "Pods/Target Support Files/Pods-XDSThirdParty/Pods-XDSThirdParty.release.xcconfig"; sourceTree = "<group>"; };
+		A269A0171E0153140083B333 /* XDSThirdParty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDSThirdParty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A269A01B1E0153140083B333 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A269A01D1E0153140083B333 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A269A01E1E0153140083B333 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A269A0241E0153140083B333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A269A0261E0153140083B333 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A269A0291E0153140083B333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A269A02B1E0153140083B333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A269A0351E0154350083B333 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		A269A0361E0154350083B333 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		A269A0381E0155540083B333 /* iCarouselViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarouselViewController.h; sourceTree = "<group>"; };
+		A269A0391E0155540083B333 /* iCarouselViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarouselViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A269A0141E0153140083B333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				477889F684FCABF49203857A /* libPods-XDSThirdParty.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A269A00E1E0153140083B333 = {
+			isa = PBXGroup;
+			children = (
+				A269A0191E0153140083B333 /* XDSThirdParty */,
+				A269A0181E0153140083B333 /* Products */,
+				D0AE0FD361B5690D75A89D22 /* Pods */,
+				C2A650030DE89A5C038B4D38 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A269A0181E0153140083B333 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A269A0171E0153140083B333 /* XDSThirdParty.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A269A0191E0153140083B333 /* XDSThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				A269A01D1E0153140083B333 /* AppDelegate.h */,
+				A269A01E1E0153140083B333 /* AppDelegate.m */,
+				A269A0351E0154350083B333 /* MainTableViewController.h */,
+				A269A0361E0154350083B333 /* MainTableViewController.m */,
+				A269A0311E0153DE0083B333 /* iCarousel */,
+				A269A0231E0153140083B333 /* Main.storyboard */,
+				A269A0261E0153140083B333 /* Assets.xcassets */,
+				A269A0281E0153140083B333 /* LaunchScreen.storyboard */,
+				A269A02B1E0153140083B333 /* Info.plist */,
+				A269A01A1E0153140083B333 /* Supporting Files */,
+			);
+			path = XDSThirdParty;
+			sourceTree = "<group>";
+		};
+		A269A01A1E0153140083B333 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A269A01B1E0153140083B333 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A269A0311E0153DE0083B333 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				A269A0321E0153DE0083B333 /* Controller */,
+				A269A0331E0153DE0083B333 /* Model */,
+				A269A0341E0153DE0083B333 /* View */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		A269A0321E0153DE0083B333 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A269A0381E0155540083B333 /* iCarouselViewController.h */,
+				A269A0391E0155540083B333 /* iCarouselViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A269A0331E0153DE0083B333 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A269A0341E0153DE0083B333 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2A650030DE89A5C038B4D38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				910CC6469133200DA84FADA7 /* libPods-XDSThirdParty.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0AE0FD361B5690D75A89D22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B67D5563E0CE7BEBC1CF8B4 /* Pods-XDSThirdParty.debug.xcconfig */,
+				960AA33AC422DE470F89258C /* Pods-XDSThirdParty.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A269A0161E0153140083B333 /* XDSThirdParty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A269A02E1E0153140083B333 /* Build configuration list for PBXNativeTarget "XDSThirdParty" */;
+			buildPhases = (
+				56596E2D00FE493A18074AD8 /* [CP] Check Pods Manifest.lock */,
+				A269A0131E0153140083B333 /* Sources */,
+				A269A0141E0153140083B333 /* Frameworks */,
+				A269A0151E0153140083B333 /* Resources */,
+				281C8C5CEC28B04786D451BA /* [CP] Embed Pods Frameworks */,
+				7281119BCEB6F9C9DF6C7F24 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XDSThirdParty;
+			productName = XDSThirdParty;
+			productReference = A269A0171E0153140083B333 /* XDSThirdParty.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A269A00F1E0153140083B333 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Hmily;
+				TargetAttributes = {
+					A269A0161E0153140083B333 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 85W725W7AQ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A269A0121E0153140083B333 /* Build configuration list for PBXProject "XDSThirdParty" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A269A00E1E0153140083B333;
+			productRefGroup = A269A0181E0153140083B333 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A269A0161E0153140083B333 /* XDSThirdParty */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A269A0151E0153140083B333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A269A02A1E0153140083B333 /* LaunchScreen.storyboard in Resources */,
+				A269A0271E0153140083B333 /* Assets.xcassets in Resources */,
+				A269A0251E0153140083B333 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		281C8C5CEC28B04786D451BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XDSThirdParty/Pods-XDSThirdParty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56596E2D00FE493A18074AD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7281119BCEB6F9C9DF6C7F24 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XDSThirdParty/Pods-XDSThirdParty-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A269A0131E0153140083B333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A269A01F1E0153140083B333 /* AppDelegate.m in Sources */,
+				A269A01C1E0153140083B333 /* main.m in Sources */,
+				A269A03A1E0155540083B333 /* iCarouselViewController.m in Sources */,
+				A269A0371E0154350083B333 /* MainTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A269A0231E0153140083B333 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A269A0241E0153140083B333 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A269A0281E0153140083B333 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A269A0291E0153140083B333 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A269A02C1E0153140083B333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A269A02D1E0153140083B333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A269A02F1E0153140083B333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B67D5563E0CE7BEBC1CF8B4 /* Pods-XDSThirdParty.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85W725W7AQ;
+				INFOPLIST_FILE = XDSThirdParty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creditonline.XDSThirdParty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A269A0301E0153140083B333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 960AA33AC422DE470F89258C /* Pods-XDSThirdParty.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85W725W7AQ;
+				INFOPLIST_FILE = XDSThirdParty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creditonline.XDSThirdParty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A269A0121E0153140083B333 /* Build configuration list for PBXProject "XDSThirdParty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A269A02C1E0153140083B333 /* Debug */,
+				A269A02D1E0153140083B333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A269A02E1E0153140083B333 /* Build configuration list for PBXNativeTarget "XDSThirdParty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A269A02F1E0153140083B333 /* Debug */,
+				A269A0301E0153140083B333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A269A00F1E0153140083B333 /* Project object */;
+}
