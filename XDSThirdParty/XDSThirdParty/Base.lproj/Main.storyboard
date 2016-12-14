@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--第三方库-->
         <scene sceneID="xgk-dd-irk">
             <objects>
                 <tableViewController id="wX3-xm-Pi7" customClass="MainTableViewController" sceneMemberID="viewController">
@@ -24,18 +24,18 @@
                                         <rect key="frame" x="0.0" y="35" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="swP-X4-hGq" id="eH1-T0-CCe">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="iCarousel(轮播库)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S5B-IL-DqI">
-                                                    <rect key="frame" x="15" y="9" width="135" height="21"/>
+                                                    <rect key="frame" x="15" y="10" width="135" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="iCarouselViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qmI-Dk-QSX">
-                                                    <rect key="frame" x="15" y="30" width="44" height="15"/>
+                                                    <rect key="frame" x="15" y="30.5" width="136.5" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -52,7 +52,7 @@
                             <outlet property="delegate" destination="wX3-xm-Pi7" id="bu9-am-YSy"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="0B9-o0-O5H"/>
+                    <navigationItem key="navigationItem" title="第三方库" id="0B9-o0-O5H"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hrY-G5-T5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

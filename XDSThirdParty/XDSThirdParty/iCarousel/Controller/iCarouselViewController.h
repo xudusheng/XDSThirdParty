@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface iCarouselViewController : UIViewController
+@interface iCarouselViewController : UITableViewController
 
 @end

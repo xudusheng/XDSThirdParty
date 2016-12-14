@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8D5CDF150C5D956D79ACDD00B4609E94'
+               BlueprintIdentifier = '68091534E28223297AD042C304B9D35B'
                BlueprintName = 'Pods-XDSThirdParty'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-XDSThirdParty.a'>

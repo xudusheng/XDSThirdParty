@@ -24,12 +24,13 @@ static NSString * const CellTitles[] = {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationController.navigationBar setTranslucent:NO];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (MainTableViewRowICarousel == indexPath.row) {
-        iCarouselViewController * iCarouselVC = [[iCarouselViewController alloc] init];
+        iCarouselViewController * iCarouselVC = [[iCarouselViewController alloc] initWithStyle:UITableViewStyleGrouped];
         [self.navigationController pushViewController:iCarouselVC animated:YES];
     }
     

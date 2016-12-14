@@ -15,6 +15,22 @@
 		A269A02A1E0153140083B333 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A269A0281E0153140083B333 /* LaunchScreen.storyboard */; };
 		A269A0371E0154350083B333 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A269A0361E0154350083B333 /* MainTableViewController.m */; };
 		A269A03A1E0155540083B333 /* iCarouselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A269A0391E0155540083B333 /* iCarouselViewController.m */; };
+		A2A2F0A91E01772A0006BD5B /* iCarouselTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A2F0A81E01772A0006BD5B /* iCarouselTableView.m */; };
+		A2A2F0AC1E017FCB0006BD5B /* AndroidFragementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A2F0AB1E017FCB0006BD5B /* AndroidFragementViewController.m */; };
+		A2A2F0AF1E019B880006BD5B /* MultiTaskManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A2F0AE1E019B880006BD5B /* MultiTaskManagerViewController.m */; };
+		A2A2F0BE1E01A5400006BD5B /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0B11E01A5400006BD5B /* 0.jpg */; };
+		A2A2F0BF1E01A5400006BD5B /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0B21E01A5400006BD5B /* 1.jpg */; };
+		A2A2F0C01E01A5400006BD5B /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0B31E01A5400006BD5B /* 10.jpg */; };
+		A2A2F0C11E01A5400006BD5B /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0B41E01A5400006BD5B /* 11.jpg */; };
+		A2A2F0C21E01A5400006BD5B /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0B51E01A5400006BD5B /* 12.jpg */; };
+		A2A2F0C31E01A5400006BD5B /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0B61E01A5400006BD5B /* 2.jpg */; };
+		A2A2F0C41E01A5400006BD5B /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0B71E01A5400006BD5B /* 3.jpg */; };
+		A2A2F0C51E01A5400006BD5B /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0B81E01A5400006BD5B /* 4.jpg */; };
+		A2A2F0C61E01A5400006BD5B /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0B91E01A5400006BD5B /* 5.jpg */; };
+		A2A2F0C71E01A5400006BD5B /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0BA1E01A5400006BD5B /* 6.jpg */; };
+		A2A2F0C81E01A5400006BD5B /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0BB1E01A5400006BD5B /* 7.jpg */; };
+		A2A2F0C91E01A5400006BD5B /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0BC1E01A5400006BD5B /* 8.jpg */; };
+		A2A2F0CA1E01A5400006BD5B /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0BD1E01A5400006BD5B /* 9.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +49,25 @@
 		A269A0361E0154350083B333 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		A269A0381E0155540083B333 /* iCarouselViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarouselViewController.h; sourceTree = "<group>"; };
 		A269A0391E0155540083B333 /* iCarouselViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarouselViewController.m; sourceTree = "<group>"; };
+		A2A2F0A71E01772A0006BD5B /* iCarouselTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarouselTableView.h; sourceTree = "<group>"; };
+		A2A2F0A81E01772A0006BD5B /* iCarouselTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarouselTableView.m; sourceTree = "<group>"; };
+		A2A2F0AA1E017FCB0006BD5B /* AndroidFragementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndroidFragementViewController.h; sourceTree = "<group>"; };
+		A2A2F0AB1E017FCB0006BD5B /* AndroidFragementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AndroidFragementViewController.m; sourceTree = "<group>"; };
+		A2A2F0AD1E019B880006BD5B /* MultiTaskManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiTaskManagerViewController.h; sourceTree = "<group>"; };
+		A2A2F0AE1E019B880006BD5B /* MultiTaskManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiTaskManagerViewController.m; sourceTree = "<group>"; };
+		A2A2F0B11E01A5400006BD5B /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		A2A2F0B21E01A5400006BD5B /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		A2A2F0B31E01A5400006BD5B /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		A2A2F0B41E01A5400006BD5B /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
+		A2A2F0B51E01A5400006BD5B /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
+		A2A2F0B61E01A5400006BD5B /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		A2A2F0B71E01A5400006BD5B /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		A2A2F0B81E01A5400006BD5B /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		A2A2F0B91E01A5400006BD5B /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		A2A2F0BA1E01A5400006BD5B /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		A2A2F0BB1E01A5400006BD5B /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		A2A2F0BC1E01A5400006BD5B /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		A2A2F0BD1E01A5400006BD5B /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +128,7 @@
 		A269A0311E0153DE0083B333 /* iCarousel */ = {
 			isa = PBXGroup;
 			children = (
+				A2A2F0B01E01A5400006BD5B /* images */,
 				A269A0321E0153DE0083B333 /* Controller */,
 				A269A0331E0153DE0083B333 /* Model */,
 				A269A0341E0153DE0083B333 /* View */,
@@ -105,6 +141,10 @@
 			children = (
 				A269A0381E0155540083B333 /* iCarouselViewController.h */,
 				A269A0391E0155540083B333 /* iCarouselViewController.m */,
+				A2A2F0AA1E017FCB0006BD5B /* AndroidFragementViewController.h */,
+				A2A2F0AB1E017FCB0006BD5B /* AndroidFragementViewController.m */,
+				A2A2F0AD1E019B880006BD5B /* MultiTaskManagerViewController.h */,
+				A2A2F0AE1E019B880006BD5B /* MultiTaskManagerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -119,8 +159,30 @@
 		A269A0341E0153DE0083B333 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A2A2F0A71E01772A0006BD5B /* iCarouselTableView.h */,
+				A2A2F0A81E01772A0006BD5B /* iCarouselTableView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A2A2F0B01E01A5400006BD5B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A2A2F0B11E01A5400006BD5B /* 0.jpg */,
+				A2A2F0B21E01A5400006BD5B /* 1.jpg */,
+				A2A2F0B31E01A5400006BD5B /* 10.jpg */,
+				A2A2F0B41E01A5400006BD5B /* 11.jpg */,
+				A2A2F0B51E01A5400006BD5B /* 12.jpg */,
+				A2A2F0B61E01A5400006BD5B /* 2.jpg */,
+				A2A2F0B71E01A5400006BD5B /* 3.jpg */,
+				A2A2F0B81E01A5400006BD5B /* 4.jpg */,
+				A2A2F0B91E01A5400006BD5B /* 5.jpg */,
+				A2A2F0BA1E01A5400006BD5B /* 6.jpg */,
+				A2A2F0BB1E01A5400006BD5B /* 7.jpg */,
+				A2A2F0BC1E01A5400006BD5B /* 8.jpg */,
+				A2A2F0BD1E01A5400006BD5B /* 9.jpg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		C2A650030DE89A5C038B4D38 /* Frameworks */ = {
@@ -202,9 +264,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2A2F0C91E01A5400006BD5B /* 8.jpg in Resources */,
+				A2A2F0C51E01A5400006BD5B /* 4.jpg in Resources */,
+				A2A2F0C21E01A5400006BD5B /* 12.jpg in Resources */,
+				A2A2F0C71E01A5400006BD5B /* 6.jpg in Resources */,
+				A2A2F0C81E01A5400006BD5B /* 7.jpg in Resources */,
+				A2A2F0BE1E01A5400006BD5B /* 0.jpg in Resources */,
 				A269A02A1E0153140083B333 /* LaunchScreen.storyboard in Resources */,
+				A2A2F0C31E01A5400006BD5B /* 2.jpg in Resources */,
 				A269A0271E0153140083B333 /* Assets.xcassets in Resources */,
+				A2A2F0C41E01A5400006BD5B /* 3.jpg in Resources */,
 				A269A0251E0153140083B333 /* Main.storyboard in Resources */,
+				A2A2F0C01E01A5400006BD5B /* 10.jpg in Resources */,
+				A2A2F0C61E01A5400006BD5B /* 5.jpg in Resources */,
+				A2A2F0CA1E01A5400006BD5B /* 9.jpg in Resources */,
+				A2A2F0C11E01A5400006BD5B /* 11.jpg in Resources */,
+				A2A2F0BF1E01A5400006BD5B /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +340,11 @@
 			files = (
 				A269A01F1E0153140083B333 /* AppDelegate.m in Sources */,
 				A269A01C1E0153140083B333 /* main.m in Sources */,
+				A2A2F0AC1E017FCB0006BD5B /* AndroidFragementViewController.m in Sources */,
 				A269A03A1E0155540083B333 /* iCarouselViewController.m in Sources */,
 				A269A0371E0154350083B333 /* MainTableViewController.m in Sources */,
+				A2A2F0A91E01772A0006BD5B /* iCarouselTableView.m in Sources */,
+				A2A2F0AF1E019B880006BD5B /* MultiTaskManagerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
