@@ -34,7 +34,6 @@
         icarousel.delegate = self;
         icarousel.type = iCarouselTypeCustom;
         icarousel.bounceDistance = 0.2;
-        
         [self.view addSubview:icarousel];
         [icarousel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(self.view);

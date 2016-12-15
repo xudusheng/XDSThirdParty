@@ -69,11 +69,8 @@
     if (!tableView) {
         tableView = [[iCarouselTableView alloc] initWithFrame:_carousel.bounds];
     }
-    
     return tableView;
 }
-
-
 
 - (void)carouselDidEndDecelerating:(iCarousel *)carousel{
     _segmentControl.selectedSegmentIndex = carousel.currentItemIndex;

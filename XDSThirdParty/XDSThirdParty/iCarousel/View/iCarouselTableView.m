@@ -9,9 +9,11 @@
 #import "iCarouselTableView.h"
 #import <Masonry/Masonry.h>
 #import <MJRefresh/MJRefresh.h>
+#import "UIView+Common.h"
 @interface iCarouselTableView ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView * tableView;
+@property (assign, nonatomic) NSInteger rowCount;
 @end
 
 @implementation iCarouselTableView
@@ -21,9 +23,10 @@ NSString * const iCarouselTableViewCellIdentifier = @"iCarouselTableViewCell";
     if (self = [super initWithFrame:frame]) {
         
         _tableView = ({
-            UITableView * tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+            UITableView * tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
             tableView.delegate = self;
             tableView.dataSource = self;
+            tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
             [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:iCarouselTableViewCellIdentifier];
             [self addSubview:tableView];
             [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -31,6 +34,7 @@ NSString * const iCarouselTableViewCellIdentifier = @"iCarouselTableViewCell";
             }];
             
             MJRefreshHeader * header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
+            [header beginRefreshing];
             tableView.mj_header = header;
             tableView;
         });
@@ -40,13 +44,13 @@ NSString * const iCarouselTableViewCellIdentifier = @"iCarouselTableViewCell";
 
 
 - (void)refresh{
-    [_tableView.mj_header performSelector:@selector(endRefreshing)
+    [self performSelector:@selector(endRefresh)
                                withObject:nil
                                afterDelay:3];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return _rowCount*5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -54,6 +58,33 @@ NSString * const iCarouselTableViewCellIdentifier = @"iCarouselTableViewCell";
     
     cell.textLabel.text = [NSString stringWithFormat:@"第%zd行", indexPath.row];
     return cell;
+}
+
+
+
+- (void)endRefresh {
+    _rowCount = arc4random()%2;
+    [_tableView.mj_header endRefreshing];
+    [_tableView reloadData];
+    __weak typeof(self)weakSelf = self;
+    [self configBlankPage:EaseBlankPageTypeOrders
+                  hasData:_rowCount > 0
+                 hasError:NO
+        reloadButtonBlock:^(id sender) {
+            [weakSelf.tableView.mj_header beginRefreshing];
+        }clickButtonBlock:^(EaseBlankPageType type) {
+            NSLog(@"type = %zd", type);
+        }];
+    
+//    [self configBlankPage:EaseBlankPageTypeBank_SEARCH
+//                  hasData:_rowCount > 0
+//                 hasError:YES
+//                  offsetY:20
+//        reloadButtonBlock:^(id sender) {
+//            [weakSelf.tableView.mj_header beginRefreshing];
+//        }clickButtonBlock:^(EaseBlankPageType type) {
+//            NSLog(@"type = %zd", type);
+//        }];
 }
 
 @end

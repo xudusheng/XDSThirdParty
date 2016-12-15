@@ -31,6 +31,12 @@
 		A2A2F0C81E01A5400006BD5B /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0BB1E01A5400006BD5B /* 7.jpg */; };
 		A2A2F0C91E01A5400006BD5B /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0BC1E01A5400006BD5B /* 8.jpg */; };
 		A2A2F0CA1E01A5400006BD5B /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0BD1E01A5400006BD5B /* 9.jpg */; };
+		A2A2F0D31E02450C0006BD5B /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A2F0D21E02450C0006BD5B /* UIView+Common.m */; };
+		A2A2F0D61E0246A70006BD5B /* EaseBlankPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A2F0D51E0246A70006BD5B /* EaseBlankPageView.m */; };
+		A2A2F0DE1E024A920006BD5B /* blankpage_button_reload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0DA1E024A920006BD5B /* blankpage_button_reload@2x.png */; };
+		A2A2F0DF1E024A920006BD5B /* blankpage_image_Hi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0DB1E024A920006BD5B /* blankpage_image_Hi@2x.png */; };
+		A2A2F0E01E024A920006BD5B /* blankpage_image_loadFail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0DC1E024A920006BD5B /* blankpage_image_loadFail@2x.png */; };
+		A2A2F0E11E024A920006BD5B /* blankpage_image_Sleep@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2A2F0DD1E024A920006BD5B /* blankpage_image_Sleep@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +74,14 @@
 		A2A2F0BB1E01A5400006BD5B /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		A2A2F0BC1E01A5400006BD5B /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		A2A2F0BD1E01A5400006BD5B /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		A2A2F0D11E02450C0006BD5B /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
+		A2A2F0D21E02450C0006BD5B /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
+		A2A2F0D41E0246A70006BD5B /* EaseBlankPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseBlankPageView.h; sourceTree = "<group>"; };
+		A2A2F0D51E0246A70006BD5B /* EaseBlankPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseBlankPageView.m; sourceTree = "<group>"; };
+		A2A2F0DA1E024A920006BD5B /* blankpage_button_reload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blankpage_button_reload@2x.png"; sourceTree = "<group>"; };
+		A2A2F0DB1E024A920006BD5B /* blankpage_image_Hi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blankpage_image_Hi@2x.png"; sourceTree = "<group>"; };
+		A2A2F0DC1E024A920006BD5B /* blankpage_image_loadFail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blankpage_image_loadFail@2x.png"; sourceTree = "<group>"; };
+		A2A2F0DD1E024A920006BD5B /* blankpage_image_Sleep@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blankpage_image_Sleep@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +119,13 @@
 			children = (
 				A269A01D1E0153140083B333 /* AppDelegate.h */,
 				A269A01E1E0153140083B333 /* AppDelegate.m */,
+				A269A0231E0153140083B333 /* Main.storyboard */,
 				A269A0351E0154350083B333 /* MainTableViewController.h */,
 				A269A0361E0154350083B333 /* MainTableViewController.m */,
+				A2A2F0D71E024A7A0006BD5B /* Resource */,
+				A2A2F0CB1E02449C0006BD5B /* Category */,
+				A2A2F0CD1E02449C0006BD5B /* Component */,
 				A269A0311E0153DE0083B333 /* iCarousel */,
-				A269A0231E0153140083B333 /* Main.storyboard */,
 				A269A0261E0153140083B333 /* Assets.xcassets */,
 				A269A0281E0153140083B333 /* LaunchScreen.storyboard */,
 				A269A02B1E0153140083B333 /* Info.plist */,
@@ -183,6 +200,59 @@
 				A2A2F0BD1E01A5400006BD5B /* 9.jpg */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		A2A2F0CB1E02449C0006BD5B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A2A2F0CC1E02449C0006BD5B /* UIView */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A2A2F0CC1E02449C0006BD5B /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				A2A2F0D11E02450C0006BD5B /* UIView+Common.h */,
+				A2A2F0D21E02450C0006BD5B /* UIView+Common.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		A2A2F0CD1E02449C0006BD5B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				A2A2F0D41E0246A70006BD5B /* EaseBlankPageView.h */,
+				A2A2F0D51E0246A70006BD5B /* EaseBlankPageView.m */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		A2A2F0D71E024A7A0006BD5B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A2A2F0D81E024A7A0006BD5B /* Images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A2A2F0D81E024A7A0006BD5B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A2A2F0D91E024A920006BD5B /* blankpage */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A2A2F0D91E024A920006BD5B /* blankpage */ = {
+			isa = PBXGroup;
+			children = (
+				A2A2F0DA1E024A920006BD5B /* blankpage_button_reload@2x.png */,
+				A2A2F0DB1E024A920006BD5B /* blankpage_image_Hi@2x.png */,
+				A2A2F0DC1E024A920006BD5B /* blankpage_image_loadFail@2x.png */,
+				A2A2F0DD1E024A920006BD5B /* blankpage_image_Sleep@2x.png */,
+			);
+			path = blankpage;
 			sourceTree = "<group>";
 		};
 		C2A650030DE89A5C038B4D38 /* Frameworks */ = {
@@ -265,12 +335,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2A2F0C91E01A5400006BD5B /* 8.jpg in Resources */,
+				A2A2F0DE1E024A920006BD5B /* blankpage_button_reload@2x.png in Resources */,
 				A2A2F0C51E01A5400006BD5B /* 4.jpg in Resources */,
 				A2A2F0C21E01A5400006BD5B /* 12.jpg in Resources */,
 				A2A2F0C71E01A5400006BD5B /* 6.jpg in Resources */,
 				A2A2F0C81E01A5400006BD5B /* 7.jpg in Resources */,
 				A2A2F0BE1E01A5400006BD5B /* 0.jpg in Resources */,
 				A269A02A1E0153140083B333 /* LaunchScreen.storyboard in Resources */,
+				A2A2F0E11E024A920006BD5B /* blankpage_image_Sleep@2x.png in Resources */,
+				A2A2F0E01E024A920006BD5B /* blankpage_image_loadFail@2x.png in Resources */,
 				A2A2F0C31E01A5400006BD5B /* 2.jpg in Resources */,
 				A269A0271E0153140083B333 /* Assets.xcassets in Resources */,
 				A2A2F0C41E01A5400006BD5B /* 3.jpg in Resources */,
@@ -280,6 +353,7 @@
 				A2A2F0CA1E01A5400006BD5B /* 9.jpg in Resources */,
 				A2A2F0C11E01A5400006BD5B /* 11.jpg in Resources */,
 				A2A2F0BF1E01A5400006BD5B /* 1.jpg in Resources */,
+				A2A2F0DF1E024A920006BD5B /* blankpage_image_Hi@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,11 +414,13 @@
 			files = (
 				A269A01F1E0153140083B333 /* AppDelegate.m in Sources */,
 				A269A01C1E0153140083B333 /* main.m in Sources */,
+				A2A2F0D61E0246A70006BD5B /* EaseBlankPageView.m in Sources */,
 				A2A2F0AC1E017FCB0006BD5B /* AndroidFragementViewController.m in Sources */,
 				A269A03A1E0155540083B333 /* iCarouselViewController.m in Sources */,
 				A269A0371E0154350083B333 /* MainTableViewController.m in Sources */,
 				A2A2F0A91E01772A0006BD5B /* iCarouselTableView.m in Sources */,
 				A2A2F0AF1E019B880006BD5B /* MultiTaskManagerViewController.m in Sources */,
+				A2A2F0D31E02450C0006BD5B /* UIView+Common.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +464,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -435,6 +512,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
