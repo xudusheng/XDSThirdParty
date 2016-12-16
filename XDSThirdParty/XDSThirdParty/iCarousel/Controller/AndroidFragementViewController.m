@@ -52,7 +52,6 @@
         icarousel;
     });
     
-    
 }
 
 - (void)segmentControlSelected:(UISegmentedControl *)segmentControl{
@@ -75,5 +74,6 @@
 - (void)carouselDidEndDecelerating:(iCarousel *)carousel{
     _segmentControl.selectedSegmentIndex = carousel.currentItemIndex;
 }
+
 
 @end

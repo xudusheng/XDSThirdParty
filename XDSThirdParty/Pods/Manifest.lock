@@ -2,17 +2,20 @@ PODS:
   - iCarousel (1.8.3)
   - Masonry (1.0.2)
   - MJRefresh (3.1.12)
+  - RegexKitLite-NoWarning (1.1.0)
 
 DEPENDENCIES:
   - iCarousel (~> 1.8.3)
   - Masonry (~> 1.0.2)
   - MJRefresh (~> 3.1.12)
+  - RegexKitLite-NoWarning (= 1.1.0)
 
 SPEC CHECKSUMS:
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  RegexKitLite-NoWarning: 365d208f8187997e33d9de8baeddfc00728596d8
 
-PODFILE CHECKSUM: d9e7b3ee6649d331e40dae4b4f9ea76eb45f4e32
+PODFILE CHECKSUM: c88f7962bc3262900b926adce7cc9879bf79a843
 
 COCOAPODS: 1.1.1

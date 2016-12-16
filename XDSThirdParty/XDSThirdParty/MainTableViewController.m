@@ -8,12 +8,16 @@
 
 #import "MainTableViewController.h"
 #import "iCarouselViewController.h"
+#import "MJPhotoBrowserViewController.h"
 typedef NS_ENUM(NSUInteger, MainTableViewRow) {
     MainTableViewRowICarousel = 0,
+    MainTableViewRowMJPhotoBrowser,
 };
 
 static NSString * const CellTitles[] = {
     [MainTableViewRowICarousel]       = @"iCarousel",
+    [MainTableViewRowMJPhotoBrowser]  = @"MJPhotoBrowser",
+
 };
 
 @interface MainTableViewController ()
@@ -32,6 +36,10 @@ static NSString * const CellTitles[] = {
     if (MainTableViewRowICarousel == indexPath.row) {
         iCarouselViewController * iCarouselVC = [[iCarouselViewController alloc] initWithStyle:UITableViewStyleGrouped];
         [self.navigationController pushViewController:iCarouselVC animated:YES];
+        
+    }else if (MainTableViewRowMJPhotoBrowser == indexPath.row) {
+        MJPhotoBrowserViewController * MJPhotoBrowserVC = [[MJPhotoBrowserViewController alloc] init];
+        [self.navigationController pushViewController:MJPhotoBrowserVC animated:YES];
     }
     
     

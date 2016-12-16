@@ -13,6 +13,8 @@
 @interface iCarouselTableView ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView * tableView;
+@property (strong, nonatomic) UIImageView * headerBackgroundView;
+
 @property (assign, nonatomic) NSInteger rowCount;
 @end
 
@@ -38,6 +40,24 @@ NSString * const iCarouselTableViewCellIdentifier = @"iCarouselTableViewCell";
             tableView.mj_header = header;
             tableView;
         });
+        
+        
+        _headerBackgroundView = ({
+            CGRect frame = self.bounds;
+            frame.size.height = 200;
+            UIImageView * imageView = [[UIImageView alloc] initWithFrame:frame];
+            imageView.image = [UIImage imageNamed:@"8.jpg"];
+            imageView.clipsToBounds = YES;
+            imageView.contentMode = UIViewContentModeScaleAspectFill;
+
+            UIView * headerView = [[UIView alloc] initWithFrame:imageView.bounds];
+            [headerView addSubview:imageView];
+            
+//            self.tableView.tableHeaderView = headerView;
+            imageView;
+        });
+        
+        [_tableView bringSubviewToFront:_tableView.mj_header];
     }
     return self;
 }
@@ -60,7 +80,13 @@ NSString * const iCarouselTableViewCellIdentifier = @"iCarouselTableViewCell";
     return cell;
 }
 
-
+//表头背景图片缩放
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    CGFloat offsetY = scrollView.contentOffset.y;
+    CGFloat originalHeight = 200;
+    CGRect eaFrame = CGRectMake(0, MIN(0, offsetY), CGRectGetWidth(_headerBackgroundView.frame), MAX(originalHeight, originalHeight - offsetY));
+    _headerBackgroundView.frame = eaFrame;
+}
 
 - (void)endRefresh {
     _rowCount = arc4random()%2;
@@ -69,7 +95,7 @@ NSString * const iCarouselTableViewCellIdentifier = @"iCarouselTableViewCell";
     __weak typeof(self)weakSelf = self;
     [self configBlankPage:EaseBlankPageTypeOrders
                   hasData:_rowCount > 0
-                 hasError:NO
+                 hasError:arc4random()%2
         reloadButtonBlock:^(id sender) {
             [weakSelf.tableView.mj_header beginRefreshing];
         }clickButtonBlock:^(EaseBlankPageType type) {
