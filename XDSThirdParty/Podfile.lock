@@ -1,21 +1,41 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - iCarousel (1.8.3)
+  - JazzHands (2.0.8)
   - Masonry (1.0.2)
   - MJRefresh (3.1.12)
   - RegexKitLite-NoWarning (1.1.0)
 
 DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
   - iCarousel (~> 1.8.3)
+  - JazzHands (~> 2.0.8)
   - Masonry (~> 1.0.2)
   - MJRefresh (~> 3.1.12)
   - RegexKitLite-NoWarning (= 1.1.0)
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  JazzHands: 355dc5c2b6fc38ee460d0ed7836c69539263f477
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   RegexKitLite-NoWarning: 365d208f8187997e33d9de8baeddfc00728596d8
 
-PODFILE CHECKSUM: c88f7962bc3262900b926adce7cc9879bf79a843
+PODFILE CHECKSUM: b6fa5c24f0808de5388f8f32b695bf246362a451
 
 COCOAPODS: 1.1.1

@@ -8,7 +8,6 @@
 
 #import "MultiTaskManagerViewController.h"
 #import <iCarousel/iCarousel.h>
-#import <Masonry/Masonry.h>
 
 
 @interface MultiTaskManagerViewController () <iCarouselDelegate, iCarouselDataSource>
@@ -73,10 +72,15 @@
         cardView.layer.shadowOpacity = 0.5f;
         cardView.layer.shadowOffset = CGSizeMake(0, 0);
         
+        //如果shouldRasterize被设置成YES，在触发离屏绘制的同时，会将光栅化后的内容缓存起来，如果对应的layer及其sublayers没有发生改变，在下一帧的时候可以直接复用。这将在很大程度上提升渲染性能。
+        cardView.layer.shouldRasterize = YES;
+        
+        
         CAShapeLayer *layer = [CAShapeLayer layer];
         layer.frame = imageView.bounds;
         layer.path = [UIBezierPath bezierPathWithRoundedRect:imageView.bounds cornerRadius:5.0].CGPath;
         imageView.layer.mask = layer;
+        cardView.layer.shouldRasterize = YES;
     }
     
     return cardView;

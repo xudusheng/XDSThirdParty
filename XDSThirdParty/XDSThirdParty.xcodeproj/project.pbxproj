@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		477889F684FCABF49203857A /* libPods-XDSThirdParty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 910CC6469133200DA84FADA7 /* libPods-XDSThirdParty.a */; };
+		A226ED381E4B039400B69CFD /* aFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A226ED371E4B039400B69CFD /* aFNetworkingViewController.m */; };
 		A269A01C1E0153140083B333 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A269A01B1E0153140083B333 /* main.m */; };
 		A269A01F1E0153140083B333 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A269A01E1E0153140083B333 /* AppDelegate.m */; };
 		A269A0251E0153140083B333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A269A0231E0153140083B333 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 		A269A02A1E0153140083B333 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A269A0281E0153140083B333 /* LaunchScreen.storyboard */; };
 		A269A0371E0154350083B333 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A269A0361E0154350083B333 /* MainTableViewController.m */; };
 		A269A03A1E0155540083B333 /* iCarouselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A269A0391E0155540083B333 /* iCarouselViewController.m */; };
+		A28CF9331E5D5E0E002C3FCC /* XDSThirdPartyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A28CF9321E5D5E0E002C3FCC /* XDSThirdPartyTests.m */; };
+		A28CF93C1E5D6121002C3FCC /* RequestTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A28CF93B1E5D6121002C3FCC /* RequestTestCase.m */; };
+		A28CF9441E5D65F8002C3FCC /* XDSThirdPartyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A28CF9431E5D65F8002C3FCC /* XDSThirdPartyUITests.m */; };
 		A2A2F0A91E01772A0006BD5B /* iCarouselTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A2F0A81E01772A0006BD5B /* iCarouselTableView.m */; };
 		A2A2F0AC1E017FCB0006BD5B /* AndroidFragementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A2F0AB1E017FCB0006BD5B /* AndroidFragementViewController.m */; };
 		A2A2F0AF1E019B880006BD5B /* MultiTaskManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A2F0AE1E019B880006BD5B /* MultiTaskManagerViewController.m */; };
@@ -73,12 +77,33 @@
 		A2BFC5671E038A0A0060C191 /* MJPhotoBrowserListView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BFC5661E038A0A0060C191 /* MJPhotoBrowserListView.m */; };
 		A2BFC56A1E038EC50060C191 /* MJPhotoBrowserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BFC5691E038EC50060C191 /* MJPhotoBrowserCollectionViewCell.m */; };
 		A2BFC5701E0392F20060C191 /* MJPhotoBrowserImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BFC56F1E0392F20060C191 /* MJPhotoBrowserImageModel.m */; };
+		A2E7871F1E515A3C008123F0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E7871E1E515A3C008123F0 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A28CF9351E5D5E0E002C3FCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A269A00F1E0153140083B333 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A269A0161E0153140083B333;
+			remoteInfo = XDSThirdParty;
+		};
+		A28CF9461E5D65F8002C3FCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A269A00F1E0153140083B333 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A269A0161E0153140083B333;
+			remoteInfo = XDSThirdParty;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5B67D5563E0CE7BEBC1CF8B4 /* Pods-XDSThirdParty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDSThirdParty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XDSThirdParty/Pods-XDSThirdParty.debug.xcconfig"; sourceTree = "<group>"; };
 		910CC6469133200DA84FADA7 /* libPods-XDSThirdParty.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XDSThirdParty.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		960AA33AC422DE470F89258C /* Pods-XDSThirdParty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDSThirdParty.release.xcconfig"; path = "Pods/Target Support Files/Pods-XDSThirdParty/Pods-XDSThirdParty.release.xcconfig"; sourceTree = "<group>"; };
+		A226ED361E4B039400B69CFD /* aFNetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aFNetworkingViewController.h; sourceTree = "<group>"; };
+		A226ED371E4B039400B69CFD /* aFNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aFNetworkingViewController.m; sourceTree = "<group>"; };
+		A226ED391E4C13D900B69CFD /* XDSThirdParty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XDSThirdParty.entitlements; sourceTree = "<group>"; };
 		A269A0171E0153140083B333 /* XDSThirdParty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDSThirdParty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A269A01B1E0153140083B333 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A269A01D1E0153140083B333 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +116,13 @@
 		A269A0361E0154350083B333 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		A269A0381E0155540083B333 /* iCarouselViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarouselViewController.h; sourceTree = "<group>"; };
 		A269A0391E0155540083B333 /* iCarouselViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarouselViewController.m; sourceTree = "<group>"; };
+		A28CF9301E5D5E0E002C3FCC /* XDSThirdPartyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XDSThirdPartyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28CF9321E5D5E0E002C3FCC /* XDSThirdPartyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDSThirdPartyTests.m; sourceTree = "<group>"; };
+		A28CF9341E5D5E0E002C3FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A28CF93B1E5D6121002C3FCC /* RequestTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestTestCase.m; sourceTree = "<group>"; };
+		A28CF9411E5D65F8002C3FCC /* XDSThirdPartyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XDSThirdPartyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28CF9431E5D65F8002C3FCC /* XDSThirdPartyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDSThirdPartyUITests.m; sourceTree = "<group>"; };
+		A28CF9451E5D65F8002C3FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2A2F0A71E01772A0006BD5B /* iCarouselTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarouselTableView.h; sourceTree = "<group>"; };
 		A2A2F0A81E01772A0006BD5B /* iCarouselTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarouselTableView.m; sourceTree = "<group>"; };
 		A2A2F0AA1E017FCB0006BD5B /* AndroidFragementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndroidFragementViewController.h; sourceTree = "<group>"; };
@@ -189,6 +221,12 @@
 		A2BFC5691E038EC50060C191 /* MJPhotoBrowserCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoBrowserCollectionViewCell.m; sourceTree = "<group>"; };
 		A2BFC56E1E0392F20060C191 /* MJPhotoBrowserImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoBrowserImageModel.h; sourceTree = "<group>"; };
 		A2BFC56F1E0392F20060C191 /* MJPhotoBrowserImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoBrowserImageModel.m; sourceTree = "<group>"; };
+		A2BFC5711E03E3B10060C191 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A2BFC5731E03E8640060C191 /* XDSGlobalConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDSGlobalConst.h; sourceTree = "<group>"; };
+		A2BFC5741E042C230060C191 /* XDSEaseDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDSEaseDefine.h; sourceTree = "<group>"; };
+		A2BFC5751E042DCE0060C191 /* XDSThirdPartyHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDSThirdPartyHeader.h; sourceTree = "<group>"; };
+		A2BFC5761E042F0E0060C191 /* XDSHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDSHeader.h; sourceTree = "<group>"; };
+		A2E7871E1E515A3C008123F0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,17 +234,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E7871F1E515A3C008123F0 /* AVFoundation.framework in Frameworks */,
 				477889F684FCABF49203857A /* libPods-XDSThirdParty.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28CF92D1E5D5E0E002C3FCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28CF93E1E5D65F8002C3FCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A226ED351E4B037A00B69CFD /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A226ED361E4B039400B69CFD /* aFNetworkingViewController.h */,
+				A226ED371E4B039400B69CFD /* aFNetworkingViewController.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
 		A269A00E1E0153140083B333 = {
 			isa = PBXGroup;
 			children = (
 				A269A0191E0153140083B333 /* XDSThirdParty */,
+				A28CF9311E5D5E0E002C3FCC /* XDSThirdPartyTests */,
+				A28CF9421E5D65F8002C3FCC /* XDSThirdPartyUITests */,
 				A269A0181E0153140083B333 /* Products */,
 				D0AE0FD361B5690D75A89D22 /* Pods */,
 				C2A650030DE89A5C038B4D38 /* Frameworks */,
@@ -217,6 +281,8 @@
 			isa = PBXGroup;
 			children = (
 				A269A0171E0153140083B333 /* XDSThirdParty.app */,
+				A28CF9301E5D5E0E002C3FCC /* XDSThirdPartyTests.xctest */,
+				A28CF9411E5D65F8002C3FCC /* XDSThirdPartyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,11 +290,13 @@
 		A269A0191E0153140083B333 /* XDSThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				A226ED391E4C13D900B69CFD /* XDSThirdParty.entitlements */,
 				A269A01D1E0153140083B333 /* AppDelegate.h */,
 				A269A01E1E0153140083B333 /* AppDelegate.m */,
 				A269A0231E0153140083B333 /* Main.storyboard */,
 				A269A0351E0154350083B333 /* MainTableViewController.h */,
 				A269A0361E0154350083B333 /* MainTableViewController.m */,
+				A226ED351E4B037A00B69CFD /* AFNetworking */,
 				A2BFC5371E037F660060C191 /* MJPhotoBrowser */,
 				A269A0311E0153DE0083B333 /* iCarousel */,
 				A2BFC3AE1E02D5260060C191 /* Util */,
@@ -239,6 +307,7 @@
 				A269A0261E0153140083B333 /* Assets.xcassets */,
 				A269A0281E0153140083B333 /* LaunchScreen.storyboard */,
 				A269A02B1E0153140083B333 /* Info.plist */,
+				A2BFC5711E03E3B10060C191 /* PrefixHeader.pch */,
 				A269A01A1E0153140083B333 /* Supporting Files */,
 			);
 			path = XDSThirdParty;
@@ -290,6 +359,25 @@
 				A2A2F0A81E01772A0006BD5B /* iCarouselTableView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A28CF9311E5D5E0E002C3FCC /* XDSThirdPartyTests */ = {
+			isa = PBXGroup;
+			children = (
+				A28CF9321E5D5E0E002C3FCC /* XDSThirdPartyTests.m */,
+				A28CF93B1E5D6121002C3FCC /* RequestTestCase.m */,
+				A28CF9341E5D5E0E002C3FCC /* Info.plist */,
+			);
+			path = XDSThirdPartyTests;
+			sourceTree = "<group>";
+		};
+		A28CF9421E5D65F8002C3FCC /* XDSThirdPartyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A28CF9431E5D65F8002C3FCC /* XDSThirdPartyUITests.m */,
+				A28CF9451E5D65F8002C3FCC /* Info.plist */,
+			);
+			path = XDSThirdPartyUITests;
 			sourceTree = "<group>";
 		};
 		A2A2F0B01E01A5400006BD5B /* images */ = {
@@ -395,6 +483,7 @@
 		A2BFC3AE1E02D5260060C191 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				A2BFC5721E03E84B0060C191 /* Const */,
 				A2BFC3AF1E02D5260060C191 /* Common */,
 				A2BFC3B01E02D5260060C191 /* Manager */,
 			);
@@ -545,9 +634,21 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A2BFC5721E03E84B0060C191 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				A2BFC5731E03E8640060C191 /* XDSGlobalConst.h */,
+				A2BFC5741E042C230060C191 /* XDSEaseDefine.h */,
+				A2BFC5751E042DCE0060C191 /* XDSThirdPartyHeader.h */,
+				A2BFC5761E042F0E0060C191 /* XDSHeader.h */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
 		C2A650030DE89A5C038B4D38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2E7871E1E515A3C008123F0 /* AVFoundation.framework */,
 				910CC6469133200DA84FADA7 /* libPods-XDSThirdParty.a */,
 			);
 			name = Frameworks;
@@ -585,6 +686,42 @@
 			productReference = A269A0171E0153140083B333 /* XDSThirdParty.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A28CF92F1E5D5E0E002C3FCC /* XDSThirdPartyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28CF9391E5D5E0E002C3FCC /* Build configuration list for PBXNativeTarget "XDSThirdPartyTests" */;
+			buildPhases = (
+				A28CF92C1E5D5E0E002C3FCC /* Sources */,
+				A28CF92D1E5D5E0E002C3FCC /* Frameworks */,
+				A28CF92E1E5D5E0E002C3FCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A28CF9361E5D5E0E002C3FCC /* PBXTargetDependency */,
+			);
+			name = XDSThirdPartyTests;
+			productName = XDSThirdPartyTests;
+			productReference = A28CF9301E5D5E0E002C3FCC /* XDSThirdPartyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A28CF9401E5D65F8002C3FCC /* XDSThirdPartyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28CF9481E5D65F8002C3FCC /* Build configuration list for PBXNativeTarget "XDSThirdPartyUITests" */;
+			buildPhases = (
+				A28CF93D1E5D65F8002C3FCC /* Sources */,
+				A28CF93E1E5D65F8002C3FCC /* Frameworks */,
+				A28CF93F1E5D65F8002C3FCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A28CF9471E5D65F8002C3FCC /* PBXTargetDependency */,
+			);
+			name = XDSThirdPartyUITests;
+			productName = XDSThirdPartyUITests;
+			productReference = A28CF9411E5D65F8002C3FCC /* XDSThirdPartyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -598,6 +735,23 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 85W725W7AQ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+						};
+					};
+					A28CF92F1E5D5E0E002C3FCC = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 85W725W7AQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A269A0161E0153140083B333;
+					};
+					A28CF9401E5D65F8002C3FCC = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 85W725W7AQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A269A0161E0153140083B333;
 					};
 				};
 			};
@@ -615,6 +769,8 @@
 			projectRoot = "";
 			targets = (
 				A269A0161E0153140083B333 /* XDSThirdParty */,
+				A28CF92F1E5D5E0E002C3FCC /* XDSThirdPartyTests */,
+				A28CF9401E5D65F8002C3FCC /* XDSThirdPartyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -646,6 +802,20 @@
 				A2A2F0BF1E01A5400006BD5B /* 1.jpg in Resources */,
 				A2A2F0DF1E024A920006BD5B /* blankpage_image_Hi@2x.png in Resources */,
 				A2BFC5321E037A460060C191 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28CF92E1E5D5E0E002C3FCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28CF93F1E5D65F8002C3FCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -721,6 +891,7 @@
 				A2BFC5291E037A460060C191 /* SDWebImagePrefetcher.m in Sources */,
 				A2BFC52E1E037A460060C191 /* UIImageView+WebCache.m in Sources */,
 				A2BFC3AC1E02D1E20060C191 /* RFKeyboardToolbar.m in Sources */,
+				A226ED381E4B039400B69CFD /* aFNetworkingViewController.m in Sources */,
 				A2BFC3A51E02D0C50060C191 /* EaseMarkdownTextView.m in Sources */,
 				A2BFC5201E037A460060C191 /* MJPhotoToolbar.m in Sources */,
 				A2BFC52B1E037A460060C191 /* UIImage+GIF.m in Sources */,
@@ -750,7 +921,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A28CF92C1E5D5E0E002C3FCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28CF9331E5D5E0E002C3FCC /* XDSThirdPartyTests.m in Sources */,
+				A28CF93C1E5D6121002C3FCC /* RequestTestCase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28CF93D1E5D65F8002C3FCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28CF9441E5D65F8002C3FCC /* XDSThirdPartyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A28CF9361E5D5E0E002C3FCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A269A0161E0153140083B333 /* XDSThirdParty */;
+			targetProxy = A28CF9351E5D5E0E002C3FCC /* PBXContainerItemProxy */;
+		};
+		A28CF9471E5D65F8002C3FCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A269A0161E0153140083B333 /* XDSThirdParty */;
+			targetProxy = A28CF9461E5D65F8002C3FCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A269A0231E0153140083B333 /* Main.storyboard */ = {
@@ -867,11 +1068,13 @@
 			baseConfigurationReference = 5B67D5563E0CE7BEBC1CF8B4 /* Pods-XDSThirdParty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XDSThirdParty/XDSThirdParty.entitlements;
 				DEVELOPMENT_TEAM = 85W725W7AQ;
+				GCC_PREFIX_HEADER = XDSThirdParty/PrefixHeader.pch;
 				INFOPLIST_FILE = XDSThirdParty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.creditonline.XDSThirdParty;
+				PRODUCT_BUNDLE_IDENTIFIER = com.youmi.youse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -881,12 +1084,64 @@
 			baseConfigurationReference = 960AA33AC422DE470F89258C /* Pods-XDSThirdParty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XDSThirdParty/XDSThirdParty.entitlements;
 				DEVELOPMENT_TEAM = 85W725W7AQ;
+				GCC_PREFIX_HEADER = XDSThirdParty/PrefixHeader.pch;
 				INFOPLIST_FILE = XDSThirdParty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.creditonline.XDSThirdParty;
+				PRODUCT_BUNDLE_IDENTIFIER = com.youmi.youse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A28CF9371E5D5E0E002C3FCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 85W725W7AQ;
+				INFOPLIST_FILE = XDSThirdPartyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creditonline.XDSThirdPartyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XDSThirdParty.app/XDSThirdParty";
+			};
+			name = Debug;
+		};
+		A28CF9381E5D5E0E002C3FCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 85W725W7AQ;
+				INFOPLIST_FILE = XDSThirdPartyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creditonline.XDSThirdPartyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XDSThirdParty.app/XDSThirdParty";
+			};
+			name = Release;
+		};
+		A28CF9491E5D65F8002C3FCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 85W725W7AQ;
+				INFOPLIST_FILE = XDSThirdPartyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creditonline.XDSThirdPartyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XDSThirdParty;
+			};
+			name = Debug;
+		};
+		A28CF94A1E5D65F8002C3FCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 85W725W7AQ;
+				INFOPLIST_FILE = XDSThirdPartyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creditonline.XDSThirdPartyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XDSThirdParty;
 			};
 			name = Release;
 		};
@@ -910,6 +1165,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A28CF9391E5D5E0E002C3FCC /* Build configuration list for PBXNativeTarget "XDSThirdPartyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28CF9371E5D5E0E002C3FCC /* Debug */,
+				A28CF9381E5D5E0E002C3FCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A28CF9481E5D65F8002C3FCC /* Build configuration list for PBXNativeTarget "XDSThirdPartyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28CF9491E5D65F8002C3FCC /* Debug */,
+				A28CF94A1E5D65F8002C3FCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,8 +7,7 @@
 //
 
 #import "MJPhotoBrowserCollectionViewCell.h"
-#import <Masonry/Masonry.h>
-#import "UIImageView+WebCache.h"
+
 
 @interface MJPhotoBrowserCollectionViewCell ()
 

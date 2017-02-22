@@ -244,7 +244,7 @@ static int _prefetchedNum = 10;
 - (CGSize)size
 {
     if (self.images.count) {
-        return [[self.images objectAtIndex:0] size];
+        return [(UIImage *)[self.images objectAtIndex:0] size];
     }
     return [super size];
 }

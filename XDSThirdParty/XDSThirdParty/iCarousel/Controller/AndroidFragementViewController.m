@@ -8,7 +8,6 @@
 
 #import "AndroidFragementViewController.h"
 
-#import <Masonry/Masonry.h>
 #import <iCarousel/iCarousel.h>
 #import "iCarouselTableView.h"
 

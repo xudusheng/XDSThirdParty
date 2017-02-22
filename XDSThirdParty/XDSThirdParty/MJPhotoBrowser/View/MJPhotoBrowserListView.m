@@ -7,9 +7,6 @@
 //
 
 #import "MJPhotoBrowserListView.h"
-#import <Masonry/Masonry.h>
-#import <MJRefresh/MJRefresh.h>
-#import "UIView+Common.h"
 #import "MJPhotoBrowserCollectionViewCell.h"
 
 #import "MJPhotoBrowser.h"
@@ -99,31 +96,6 @@ NSString * const ImagePrefixUrl = @"http://tnfs.tngou.net/image";
     }
 }
 
-- (void)showPhotoBrowserWithImageModel:(MJPhotoBrowserImageModel *)imageModel {
-    
-    //显示大图
-    int count = (int)imageModel.imageArray.count;
-    NSMutableArray *photos = [NSMutableArray arrayWithCapacity:count];
-    for (int i = 0; i<count; i++) {
-        NSDictionary *imageItem = imageModel.imageArray[i];
-        MJPhoto *photo = [[MJPhoto alloc] init];
-        NSString * scr = imageItem[@"src"];
-        if (![scr hasPrefix:@"http"]) {
-            scr = [ImagePrefixUrl stringByAppendingString:scr];
-        }
-        photo.url = [NSURL URLWithString:scr]; // 图片路径
-        [photos addObject:photo];
-    }
-    
-    // 2.显示相册
-    MJPhotoBrowser *browser = [[MJPhotoBrowser alloc] init];
-    browser.currentPhotoIndex = 0; // 弹出相册时显示的第一张图片是？
-    browser.photos = photos; // 设置所有的图片
-    browser.showSaveBtn = NO;
-    [browser show];
-    
-}
-
 
 //下来刷新
 - (void)fetchTop {
@@ -186,7 +158,7 @@ NSString * const ImagePrefixUrl = @"http://tnfs.tngou.net/image";
                                             [_collectionView.mj_header endRefreshing];
                                             [_collectionView.mj_footer endRefreshing];
                                             [_collectionView reloadData];
-                                            [self configBlankPage:EaseBlankPageTypeViewMessageList
+                                            [self configBlankPage:EaseBlankPageTypePhotos
                                                           hasData:_dataArray.count > 0
                                                          hasError:error != nil
                                                 reloadButtonBlock:^(id sender) {
@@ -231,4 +203,30 @@ NSString * const ImagePrefixUrl = @"http://tnfs.tngou.net/image";
     
 }
 
+
+
+
+#pragma mark - MJPhotoBrowser库关键代码
+- (void)showPhotoBrowserWithImageModel:(MJPhotoBrowserImageModel *)imageModel {
+    //显示大图
+    int count = (int)imageModel.imageArray.count;
+    NSMutableArray *photos = [NSMutableArray arrayWithCapacity:count];
+    for (int i = 0; i<count; i++) {
+        NSDictionary *imageItem = imageModel.imageArray[i];
+        MJPhoto *photo = [[MJPhoto alloc] init];
+        NSString * scr = imageItem[@"src"];
+        if (![scr hasPrefix:@"http"]) {
+            scr = [ImagePrefixUrl stringByAppendingString:scr];
+        }
+        photo.url = [NSURL URLWithString:scr]; // 图片路径
+        [photos addObject:photo];
+    }
+    
+    // 2.显示相册
+    MJPhotoBrowser *browser = [[MJPhotoBrowser alloc] init];
+    browser.currentPhotoIndex = 0; // 弹出相册时显示的第一张图片是？
+    browser.photos = photos; // 设置所有的图片
+    browser.showSaveBtn = NO;
+    [browser show];
+}
 @end

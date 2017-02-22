@@ -10,13 +10,15 @@
 #import "iCarouselViewController.h"
 #import "MJPhotoBrowserViewController.h"
 typedef NS_ENUM(NSUInteger, MainTableViewRow) {
-    MainTableViewRowICarousel = 0,
+    MainTableViewRowAFNetworking = 0,
+    MainTableViewRowICarousel,
     MainTableViewRowMJPhotoBrowser,
 };
 
 static NSString * const CellTitles[] = {
-    [MainTableViewRowICarousel]       = @"iCarousel",
-    [MainTableViewRowMJPhotoBrowser]  = @"MJPhotoBrowser",
+    [MainTableViewRowAFNetworking]    = @"aFNetworkingViewController",
+    [MainTableViewRowICarousel]       = @"iCarouselViewController",
+    [MainTableViewRowMJPhotoBrowser]  = @"MJPhotoBrowserViewController",
 
 };
 
@@ -29,21 +31,20 @@ static NSString * const CellTitles[] = {
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController.navigationBar setTranslucent:NO];
+    
+    
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (MainTableViewRowICarousel == indexPath.row) {
-        iCarouselViewController * iCarouselVC = [[iCarouselViewController alloc] initWithStyle:UITableViewStyleGrouped];
-        [self.navigationController pushViewController:iCarouselVC animated:YES];
-        
-    }else if (MainTableViewRowMJPhotoBrowser == indexPath.row) {
-        MJPhotoBrowserViewController * MJPhotoBrowserVC = [[MJPhotoBrowserViewController alloc] init];
-        [self.navigationController pushViewController:MJPhotoBrowserVC animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSString * className = CellTitles[indexPath.row];
+    if (className) {
+        Class class = NSClassFromString(className);
+        UIViewController * controller = [[class alloc] init];
+        [self.navigationController pushViewController:controller animated:YES];
+    }else{
+        kTipAlert(@"这个模块还接进去，敬请期待~");
     }
-    
-    
 }
-
 
 @end

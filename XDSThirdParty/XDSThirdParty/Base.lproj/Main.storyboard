@@ -20,21 +20,48 @@
                         <sections>
                             <tableViewSection id="rA6-eG-oIB">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="S5B-IL-DqI" detailTextLabel="qmI-Dk-QSX" style="IBUITableViewCellStyleSubtitle" id="swP-X4-hGq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="S5B-IL-DqI" detailTextLabel="qmI-Dk-QSX" style="IBUITableViewCellStyleSubtitle" id="swP-X4-hGq">
                                         <rect key="frame" x="0.0" y="35" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="swP-X4-hGq" id="eH1-T0-CCe">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="iCarousel(轮播库)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S5B-IL-DqI">
-                                                    <rect key="frame" x="15" y="10" width="135" height="20.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="AFNetworking(Web Request)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S5B-IL-DqI">
+                                                    <rect key="frame" x="15" y="10" width="221.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="iCarouselViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qmI-Dk-QSX">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="aFNetworkingViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qmI-Dk-QSX">
+                                                    <rect key="frame" x="15" y="30.5" width="161.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="1">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="n9z-U5-Hhy" detailTextLabel="vDp-w7-OtM" style="IBUITableViewCellStyleSubtitle" id="tPU-IU-4Lf">
+                                        <rect key="frame" x="0.0" y="90" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tPU-IU-4Lf" id="vAs-mR-OLs">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="iCarousel(luoboku)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n9z-U5-Hhy">
+                                                    <rect key="frame" x="15" y="10" width="144" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="iCarouselViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vDp-w7-OtM">
                                                     <rect key="frame" x="15" y="30.5" width="136.5" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -43,23 +70,26 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="2">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="Hpg-lm-ICy" detailTextLabel="VM1-em-KRv" style="IBUITableViewCellStyleSubtitle" id="7sg-Dw-ltE">
-                                        <rect key="frame" x="0.0" y="90" width="375" height="55"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Hpg-lm-ICy" detailTextLabel="VM1-em-KRv" style="IBUITableViewCellStyleSubtitle" id="7sg-Dw-ltE">
+                                        <rect key="frame" x="0.0" y="145" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7sg-Dw-ltE" id="b5r-bz-W1J">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="MJPhotoBrowser(图片浏览器)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hpg-lm-ICy">
-                                                    <rect key="frame" x="15" y="10" width="229" height="20.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="MJPhotoBrowser(PhotoBrowser)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hpg-lm-ICy">
+                                                    <rect key="frame" x="15" y="10" width="249.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="iCarouselViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VM1-em-KRv">
-                                                    <rect key="frame" x="15" y="30.5" width="136.5" height="14.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="MJPhotoBrowserListView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VM1-em-KRv">
+                                                    <rect key="frame" x="15" y="30.5" width="144" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -67,6 +97,36 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="3">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="CTG-lk-hfF" detailTextLabel="fJF-Et-Xj2" style="IBUITableViewCellStyleSubtitle" id="HDB-3S-oe0">
+                                        <rect key="frame" x="0.0" y="200" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HDB-3S-oe0" id="aWk-62-xQ3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="JazzHands(交互动画)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CTG-lk-hfF">
+                                                    <rect key="frame" x="15" y="10" width="165.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="MJPhotoBrowserListView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fJF-Et-Xj2">
+                                                    <rect key="frame" x="15" y="30.5" width="144" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>

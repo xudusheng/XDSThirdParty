@@ -7,7 +7,6 @@
 //
 
 #import "iCarouselViewController.h"
-#import <Masonry/Masonry.h>
 #import <iCarousel/iCarousel.h>
 #import "iCarouselTableView.h"
 
@@ -20,12 +19,13 @@
 NSString * const iCarouselViewTableViewCellIdentifier = @"iCarouselViewTableViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     _dataArray = [@[
                     @{@"title":@"Android Fragement", @"className":@"AndroidFragementViewController"},
                     @{@"title":@"仿iOS多任务管理器", @"className":@"MultiTaskManagerViewController"},
                     ] mutableCopy];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:iCarouselViewTableViewCellIdentifier];
+        
 }
 
 

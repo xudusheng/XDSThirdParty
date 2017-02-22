@@ -1,15 +1,18 @@
 
 target 'XDSThirdParty' do
-
-pod 'MJRefresh', '~> 3.1.12'
-pod 'Masonry', '~> 1.0.2'
-
-pod 'iCarousel', '~> 1.8.3'
-
-#正则表达式
-pod 'RegexKitLite-NoWarning', '1.1.0'
-
-##图片浏览器
-#pod 'MJPhotoBrowser', '~> 1.0.2'
-
+    
+    pod 'MJRefresh', '~> 3.1.12'
+    pod 'Masonry', '~> 1.0.2'
+    
+    pod 'iCarousel', '~> 1.8.3'
+    
+    #正则表达式
+    pod 'RegexKitLite-NoWarning', '1.1.0'
+    
+    ##图片浏览器
+    #pod 'MJPhotoBrowser', '~> 1.0.2'
+    
+    pod 'JazzHands', '~> 2.0.8'
+    
+    pod 'AFNetworking', '~> 3.1.0'
 end

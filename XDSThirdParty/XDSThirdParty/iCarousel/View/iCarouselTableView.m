@@ -7,9 +7,7 @@
 //
 
 #import "iCarouselTableView.h"
-#import <Masonry/Masonry.h>
-#import <MJRefresh/MJRefresh.h>
-#import "UIView+Common.h"
+
 @interface iCarouselTableView ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView * tableView;
@@ -93,7 +91,7 @@ NSString * const iCarouselTableViewCellIdentifier = @"iCarouselTableViewCell";
     [_tableView.mj_header endRefreshing];
     [_tableView reloadData];
     __weak typeof(self)weakSelf = self;
-    [self configBlankPage:EaseBlankPageTypeOrders
+    [self configBlankPage:EaseBlankPageTypeViewiCarousel
                   hasData:_rowCount > 0
                  hasError:arc4random()%2
         reloadButtonBlock:^(id sender) {

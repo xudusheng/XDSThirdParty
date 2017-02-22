@@ -96,23 +96,19 @@
         NSString *imageName, *tipStr;
         _curType=blankPageType;
         switch (blankPageType) {
-                case EaseBlankPageTypeViewMessageList:{//私信列表
+                case EaseBlankPageTypeViewiCarousel:{//iCarousel
                     imageName = @"blankpage_image_Hi";
-                    tipStr = @"这里没有未读的消息";
+                    tipStr = @"这里没有数据\n下拉刷新试试~";
                     break;
                 }
                 
-                case EaseBlankPageTypeOrders:{
+                case EaseBlankPageTypePhotos:{
                     imageName = @"blankpage_image_Sleep";
-                    tipStr = @"您还木有订单呢～";
+                    tipStr = @"没有拉取到图片，要不然在等待看～";
                     break;
                     
                 }
-                case EaseBlankPageTypeWallets:{
-                    imageName = @"blankpage_image_Sleep";
-                    tipStr = @"您还木有可用红包呢\n努力做任务，赚钱捞财币兑换红包～";
-                    break;
-                }
+                
                 case EaseBlankPageTypeBank_SEARCH:{
                     imageName = @"blankpage_image_Sleep";
                     tipStr = @"什么都木有搜到，换个词再试试？";
@@ -127,7 +123,7 @@
         [_monkeyView setImage:[UIImage imageNamed:imageName]];
         _tipLabel.text = tipStr;
         
-        if ((blankPageType>=EaseBlankPageTypeViewMessageList)&&(blankPageType<=EaseBlankPageTypeBank_SEARCH)) {
+        if ((blankPageType>=EaseBlankPageTypeViewiCarousel)&&(blankPageType<=EaseBlankPageTypeBank_SEARCH)) {
             [_monkeyView mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.centerX.equalTo(self);
                 make.bottom.equalTo(self.mas_centerY).offset(-35);
@@ -153,8 +149,8 @@
             
             NSString *titleStr;
             switch (blankPageType) {
-                    case EaseBlankPageTypeOrders:{
-                        titleStr=@"立即投资";
+                    case EaseBlankPageTypeViewiCarousel:{
+                        titleStr=@"点我试试";
                         break;
                     }
                 default:

@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  XDSThirdParty
+//
+//  Created by Hmily on 2016/12/16.
+//  Copyright © 2016年 Hmily. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+
+#import "XDSThirdPartyHeader.h"
+#import "XDSGlobalConst.h"
+#import "XDSEaseDefine.h"
+#import "XDSHeader.h"
+
+
+
+
+#endif /* PrefixHeader_pch */

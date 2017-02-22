@@ -26,8 +26,29 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A28CF92F1E5D5E0E002C3FCC"
+               BuildableName = "XDSThirdPartyTests.xctest"
+               BlueprintName = "XDSThirdPartyTests"
+               ReferencedContainer = "container:XDSThirdParty.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A28CF9401E5D65F8002C3FCC"
+               BuildableName = "XDSThirdPartyUITests.xctest"
+               BlueprintName = "XDSThirdPartyUITests"
+               ReferencedContainer = "container:XDSThirdParty.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
