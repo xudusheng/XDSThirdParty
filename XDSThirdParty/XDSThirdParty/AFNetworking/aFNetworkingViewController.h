@@ -15,6 +15,5 @@
 
 @interface aFNetworkingViewController ()<PKPaymentAuthorizationViewControllerDelegate>
 
-@property (nonatomic, strong) NSString * titleName;
 
 @end

@@ -13,12 +13,14 @@ typedef NS_ENUM(NSUInteger, MainTableViewRow) {
     MainTableViewRowAFNetworking = 0,
     MainTableViewRowICarousel,
     MainTableViewRowMJPhotoBrowser,
+    MainTableViewRowDynamicLoad,
 };
 
 static NSString * const CellTitles[] = {
     [MainTableViewRowAFNetworking]    = @"aFNetworkingViewController",
     [MainTableViewRowICarousel]       = @"iCarouselViewController",
     [MainTableViewRowMJPhotoBrowser]  = @"MJPhotoBrowserViewController",
+    [3] = @"DynamicLoadViewController",
 
 };
 

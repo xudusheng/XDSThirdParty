@@ -12,10 +12,7 @@ typedef NS_ENUM(NSInteger, EaseBlankPageType) {
     EaseBlankPageTypeView = 0,
     EaseBlankPageTypeViewiCarousel,//iCarousel页面
     EaseBlankPageTypePhotos,//图片列表
-
     EaseBlankPageTypeBank_SEARCH,
-    
-    
 };
 
 

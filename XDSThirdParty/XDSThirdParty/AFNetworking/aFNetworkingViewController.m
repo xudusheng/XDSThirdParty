@@ -11,6 +11,8 @@
 #import "UIImageView+WebCache.h"
 #import "MainTableViewController.h"
 
+#import "XDSURLCache.h"
+
 @implementation aFNetworkingViewController
 
 
@@ -20,21 +22,17 @@ NSString * const requestURL = @"http://v.juhe.cn/toutiao/index?type=top&key=f2b9
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     NSLog(@"request begin");
-    
-    aFNetworkingViewController * controller = [[aFNetworkingViewController alloc] init];
-    controller.titleName = @"nihao";
-    
-    NSLog(@"title = %@", controller.titleName);
-    
-    
 
-    NSArray * arr = @[@"1", @"2", @"3", @"5", @"4", @"1", @"3", @"8"];
     
-    NSLog(@"array = %@", arr);
-
-    NSSet * set = [NSSet setWithArray:arr];
-    NSLog(@"set = %@", set.allObjects);
+    XDSURLCache * cache = [[XDSURLCache alloc] init];
+    [NSURLCache setSharedURLCache:cache];
     
+    
+    UIWebView * webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:webView];
+    
+    NSURLRequest * request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.q2002.com/"]];
+    [webView loadRequest:request];
     
     
 }
