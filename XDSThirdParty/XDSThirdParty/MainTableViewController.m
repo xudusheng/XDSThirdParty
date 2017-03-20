@@ -9,6 +9,7 @@
 #import "MainTableViewController.h"
 #import "iCarouselViewController.h"
 #import "MJPhotoBrowserViewController.h"
+#import "ConfigManager.h"
 typedef NS_ENUM(NSUInteger, MainTableViewRow) {
     MainTableViewRowAFNetworking = 0,
     MainTableViewRowICarousel,
@@ -33,7 +34,7 @@ static NSString * const CellTitles[] = {
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController.navigationBar setTranslucent:NO];
-    
+    self.tableView.backgroundColor = [ConfigManager manager].color;
     
 }
 

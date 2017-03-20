@@ -10,36 +10,43 @@
 #import "AFNetworking.h"
 #import "UIImageView+WebCache.h"
 #import "MainTableViewController.h"
+#import "EXTScope.h"//@weakify(self);   @strongify(self);
+#import "ConfigManager.h"
+@interface aFNetworkingViewController ()
 
-#import "XDSURLCache.h"
+@property (strong, nonatomic) NSTimer * timer;
+@property (strong, nonatomic) UIView * myView;
 
+@end
 @implementation aFNetworkingViewController
 
-
 NSString * const requestURL = @"http://v.juhe.cn/toutiao/index?type=top&key=f2b9c5a8243bc824253119ba09f7759a";
+- (void)dealloc{
+    [_timer invalidate];
+    NSLog(@"dealloc = aFNetworkingViewController");
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    NSLog(@"request begin");
+    self.view.backgroundColor = [ConfigManager manager].color;
+    
+    self.myView = ({
+        UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+        view.backgroundColor = [UIColor redColor];
+        [self.view addSubview:view];
+        view;
+    });
 
-    
-    XDSURLCache * cache = [[XDSURLCache alloc] init];
-    [NSURLCache setSharedURLCache:cache];
-    
-    
-    UIWebView * webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:webView];
-    
-    NSURLRequest * request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.q2002.com/"]];
-    [webView loadRequest:request];
-    
+    NSLog(@"view = %@", _myView);
     
 }
 
+- (void)countdown:(NSTimer *)timer{
+  NSLog(@"xxxxxxxxxxxx");
+}
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self payThroughApplePay];
+    [ConfigManager manager].color = [UIColor redColor];
 }
 
 

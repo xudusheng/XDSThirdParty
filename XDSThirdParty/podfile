@@ -15,4 +15,9 @@ target 'XDSThirdParty' do
     pod 'JazzHands', '~> 2.0.8'
     
     pod 'AFNetworking', '~> 3.1.0'
+    
+    
+    #动态代码注入，用于实时渲染UI界面而不需要重新编译工程
+    #pod 'dyci', :git => 'https://github.com/DyCI/dyci-main.git'
+    
 end
