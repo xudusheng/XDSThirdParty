@@ -19,6 +19,9 @@ PODS:
   - Masonry (1.0.2)
   - MJRefresh (3.1.12)
   - RegexKitLite-NoWarning (1.1.0)
+  - XDSKit (0.1.2)
+  - XDSModuleManager (0.1.0)
+  - XDSShellProject (0.1.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
@@ -27,6 +30,9 @@ DEPENDENCIES:
   - Masonry (~> 1.0.2)
   - MJRefresh (~> 3.1.12)
   - RegexKitLite-NoWarning (= 1.1.0)
+  - XDSKit
+  - XDSModuleManager
+  - XDSShellProject
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -35,7 +41,10 @@ SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   RegexKitLite-NoWarning: 365d208f8187997e33d9de8baeddfc00728596d8
+  XDSKit: a0777c70acef4549815a1e82e87e36ce2c0d2c33
+  XDSModuleManager: 894eca470a7a7a6825746dea6c8057a39702c7ef
+  XDSShellProject: 126b399dd48dd0ee0f3d8e1d26d4b4dda1023ba3
 
-PODFILE CHECKSUM: 40fde9aad3a43ec0ec4a0c24ba6bee786de069b5
+PODFILE CHECKSUM: 8d117491043e7fdaad851036ef17342755d08e53
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0

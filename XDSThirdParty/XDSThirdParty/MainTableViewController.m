@@ -9,38 +9,62 @@
 #import "MainTableViewController.h"
 #import "iCarouselViewController.h"
 #import "MJPhotoBrowserViewController.h"
-#import "ConfigManager.h"
 typedef NS_ENUM(NSUInteger, MainTableViewRow) {
     MainTableViewRowAFNetworking = 0,
     MainTableViewRowICarousel,
     MainTableViewRowMJPhotoBrowser,
     MainTableViewRowDynamicLoad,
+    MainTableViewRowJazzHands,
 };
 
+
 static NSString * const CellTitles[] = {
+    [MainTableViewRowAFNetworking]    = @"AFNetworking(Web Request)",
+    [MainTableViewRowICarousel]       = @"iCarousel(轮播库)",
+    [MainTableViewRowMJPhotoBrowser]  = @"MJPhotoBrowser(图片预览)",
+    [MainTableViewRowDynamicLoad] = @"ZipArchive(文件解压/APP内动态升级)",
+    [MainTableViewRowJazzHands] = @"JazzHands(交互动画)",
+};
+
+static NSString * const CellSubTitles[] = {
     [MainTableViewRowAFNetworking]    = @"aFNetworkingViewController",
     [MainTableViewRowICarousel]       = @"iCarouselViewController",
     [MainTableViewRowMJPhotoBrowser]  = @"MJPhotoBrowserViewController",
-    [3] = @"DynamicLoadViewController",
-
+    [MainTableViewRowDynamicLoad] = @"DynamicLoadViewController",
+    //    [MainTableViewRowJazzHands] = @"",
 };
 
-@interface MainTableViewController ()
-
-@end
+@interface MainTableViewController ()@end
 
 @implementation MainTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController.navigationBar setTranslucent:NO];
-    self.tableView.backgroundColor = [ConfigManager manager].color;
-    
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 5;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString * cellId = @"MainTableViewCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
+    }
+
+    NSString * title = CellTitles[indexPath.row];
+    NSString * subTitle = CellSubTitles[indexPath.row];
+    cell.textLabel.text = title;
+    cell.detailTextLabel.text = subTitle;
+    return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSString * className = CellTitles[indexPath.row];
+    NSString * className = CellSubTitles[indexPath.row];
     if (className) {
         Class class = NSClassFromString(className);
         UIViewController * controller = [[class alloc] init];

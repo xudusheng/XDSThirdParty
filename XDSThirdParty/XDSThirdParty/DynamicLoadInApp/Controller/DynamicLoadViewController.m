@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor redColor];
     ({
         
         UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -46,6 +46,8 @@
     });
     
     [self showAllFrameworkFile];
+    
+    NSLog(@"appdelegate = %@", [UIApplication sharedApplication].delegate);
 }
 
 #pragma mark - UITableViewDelegate, UITableViewDataSource
@@ -72,6 +74,10 @@
 
     FileInfoModel * fileModel = _modulsArray[indexPath.row];
     [self loadFrameworkWithFileModel:fileModel];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"xxxxxxxxxxxx");
 }
 
 //TODO:检查模块是否有版本更新

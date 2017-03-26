@@ -1,4 +1,7 @@
 
+source 'https://github.com/CocoaPods/Specs.git'
+source "git@github.com:xudusheng/XDSKitSpec.git"
+
 target 'XDSThirdParty' do
     
     pod 'MJRefresh', '~> 3.1.12'
@@ -20,4 +23,11 @@ target 'XDSThirdParty' do
     #动态代码注入，用于实时渲染UI界面而不需要重新编译工程
     #pod 'dyci', :git => 'https://github.com/DyCI/dyci-main.git'
     
+    
+    # 自己创建的私有库
+    
+    pod "XDSKit"
+    pod "XDSShellProject"
+    pod "XDSModuleManager"
+
 end

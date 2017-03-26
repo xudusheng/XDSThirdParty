@@ -11,7 +11,6 @@
 #import "UIImageView+WebCache.h"
 #import "MainTableViewController.h"
 #import "EXTScope.h"//@weakify(self);   @strongify(self);
-#import "ConfigManager.h"
 @interface aFNetworkingViewController ()
 
 @property (strong, nonatomic) NSTimer * timer;
@@ -28,7 +27,7 @@ NSString * const requestURL = @"http://v.juhe.cn/toutiao/index?type=top&key=f2b9
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [ConfigManager manager].color;
+    self.view.backgroundColor = [UIColor whiteColor];
     
     self.myView = ({
         UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
@@ -41,13 +40,7 @@ NSString * const requestURL = @"http://v.juhe.cn/toutiao/index?type=top&key=f2b9
     
 }
 
-- (void)countdown:(NSTimer *)timer{
-  NSLog(@"xxxxxxxxxxxx");
-}
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [ConfigManager manager].color = [UIColor redColor];
-}
 
 
 //Apple Pay

@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-
+#import "XDSSPAppDelegate.h"
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        XDSSPAppDelegate.rootViewControllerClassString = @"MainNavigationController";
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([XDSSPAppDelegate class]));
     }
 }

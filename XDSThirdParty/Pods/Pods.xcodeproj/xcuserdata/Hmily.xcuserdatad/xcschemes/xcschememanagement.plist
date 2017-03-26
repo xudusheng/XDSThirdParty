@@ -34,6 +34,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>XDSKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>XDSModuleManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>XDSShellProject.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>iCarousel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,12 +62,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>346EDB1A1B6AAE026562D98AFEBC3FD3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4262BBA69037616CAFAC960466AF77B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5E026D9FD1762B5B2471407891CCCB4C</key>
+		<key>71C60BE4C5A80FC31B0D00310B52B02C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7A683A303A2A2D63A81083C9AD8E2C79</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +92,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B6A79DEAE31E204C9B2215E5BD30E1CE</key>
+		<key>C20E80F391C0258E58B7A2FDDCAF1981</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>DC7A51F0B370F9976D21032BDDB7222E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC3927863155E261E5D00BB6252BDAD7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
