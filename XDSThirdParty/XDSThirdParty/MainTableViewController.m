@@ -9,29 +9,53 @@
 #import "MainTableViewController.h"
 #import "iCarouselViewController.h"
 #import "MJPhotoBrowserViewController.h"
-typedef NS_ENUM(NSUInteger, MainTableViewRow) {
-    MainTableViewRowAFNetworking = 0,
-    MainTableViewRowICarousel,
-    MainTableViewRowMJPhotoBrowser,
-    MainTableViewRowDynamicLoad,
-    MainTableViewRowJazzHands,
+
+typedef NS_ENUM(NSUInteger, MainTableViewSection) {
+    MainTableViewSectionThirdParty = 0,
+    MainTableViewSectionCustom,
 };
 
-
-static NSString * const CellTitles[] = {
-    [MainTableViewRowAFNetworking]    = @"AFNetworking(Web Request)",
-    [MainTableViewRowICarousel]       = @"iCarousel(轮播库)",
-    [MainTableViewRowMJPhotoBrowser]  = @"MJPhotoBrowser(图片预览)",
-    [MainTableViewRowDynamicLoad] = @"ZipArchive(文件解压/APP内动态升级)",
-    [MainTableViewRowJazzHands] = @"JazzHands(交互动画)",
+static NSString * const SectionTitles[] = {
+    [MainTableViewSectionThirdParty] = @"第三方库",
+    [MainTableViewSectionCustom] = @"自定义",
+};
+typedef NS_ENUM(NSUInteger, MainTableViewThirdPartyRow) {
+    MainTableViewThirdPartyRowAFNetworking = 0,
+    MainTableViewThirdPartyRowICarousel,
+    MainTableViewThirdPartyRowMJPhotoBrowser,
+    MainTableViewThirdPartyRowDynamicLoad,
+    MainTableViewThirdPartyRowJazzHands,
 };
 
-static NSString * const CellSubTitles[] = {
-    [MainTableViewRowAFNetworking]    = @"aFNetworkingViewController",
-    [MainTableViewRowICarousel]       = @"iCarouselViewController",
-    [MainTableViewRowMJPhotoBrowser]  = @"MJPhotoBrowserViewController",
-    [MainTableViewRowDynamicLoad] = @"DynamicLoadViewController",
-    //    [MainTableViewRowJazzHands] = @"",
+typedef NS_ENUM(NSUInteger, MainTableViewCustomRow) {
+    MainTableViewCustomRowPlayer = 0,
+};
+
+static NSString * const CellTitles[2][5] = {
+    [MainTableViewSectionThirdParty] = {
+        [MainTableViewThirdPartyRowAFNetworking]    = @"AFNetworking(Web Request)",
+        [MainTableViewThirdPartyRowICarousel]       = @"iCarousel(轮播库)",
+        [MainTableViewThirdPartyRowMJPhotoBrowser]  = @"MJPhotoBrowser(图片预览)",
+        [MainTableViewThirdPartyRowDynamicLoad]     = @"ZipArchive(文件解压/APP内动态升级)",
+        [MainTableViewThirdPartyRowJazzHands]       = @"JazzHands(交互动画)",
+    },
+    
+    [MainTableViewSectionCustom] = {
+        [MainTableViewCustomRowPlayer]              = @"AVPlayer(自定义播放器样式)",
+    },
+};
+
+static NSString * const CellSubTitles[2][5] = {
+    [MainTableViewSectionThirdParty] = {
+        [MainTableViewThirdPartyRowAFNetworking]    = @"aFNetworkingViewController",
+        [MainTableViewThirdPartyRowICarousel]       = @"iCarouselViewController",
+        [MainTableViewThirdPartyRowMJPhotoBrowser]  = @"MJPhotoBrowserViewController",
+        [MainTableViewThirdPartyRowDynamicLoad]     = @"DynamicLoadViewController",
+        //    [MainTableViewThirdPartyRowJazzHands] = @"",
+    },
+    [MainTableViewSectionCustom] = {
+        [MainTableViewCustomRowPlayer]              = @"VideoListViewController",
+    },
 };
 
 @interface MainTableViewController ()@end
@@ -43,9 +67,18 @@ static NSString * const CellSubTitles[] = {
     [self.navigationController.navigationBar setTranslucent:NO];
 }
 
-
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return sizeof(SectionTitles)/sizeof(SectionTitles[0]);
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    
+    NSInteger rows = 0;
+    NSString * title = CellTitles[section][rows];
+    while (title) {
+        rows++;
+        title = CellTitles[section][rows];
+    }
+    return rows;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -55,8 +88,8 @@ static NSString * const CellSubTitles[] = {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
     }
 
-    NSString * title = CellTitles[indexPath.row];
-    NSString * subTitle = CellSubTitles[indexPath.row];
+    NSString * title = CellTitles[indexPath.section][indexPath.row];
+    NSString * subTitle = CellSubTitles[indexPath.section][indexPath.row];
     cell.textLabel.text = title;
     cell.detailTextLabel.text = subTitle;
     return cell;
@@ -64,7 +97,7 @@ static NSString * const CellSubTitles[] = {
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSString * className = CellSubTitles[indexPath.row];
+    NSString * className = CellSubTitles[indexPath.section][indexPath.row];
     if (className) {
         Class class = NSClassFromString(className);
         UIViewController * controller = [[class alloc] init];
