@@ -17,7 +17,6 @@
 #define BrightnessStep 0.02f
 #define MovieProgressStep 5.0f
 #define PlayerHeight self.view.frame.size.height
-#define IOS7 ([[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending)
 
 typedef NS_ENUM(NSInteger, GestureType){
     GestureTypeOfNone = 0,
