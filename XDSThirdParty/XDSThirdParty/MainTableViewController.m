@@ -54,7 +54,8 @@ static NSString * const CellSubTitles[2][5] = {
         //    [MainTableViewThirdPartyRowJazzHands] = @"",
     },
     [MainTableViewSectionCustom] = {
-        [MainTableViewCustomRowPlayer]              = @"XDSVideoPlayerViewController",
+//        [MainTableViewCustomRowPlayer]              = @"XDSVideoPlayerViewController",
+        [MainTableViewCustomRowPlayer]              = @"VideoListViewController",
     },
 };
 
