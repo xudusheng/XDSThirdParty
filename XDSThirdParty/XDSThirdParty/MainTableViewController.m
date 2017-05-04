@@ -29,15 +29,17 @@ typedef NS_ENUM(NSUInteger, MainTableViewThirdPartyRow) {
 
 typedef NS_ENUM(NSUInteger, MainTableViewCustomRow) {
     MainTableViewCustomRowPlayer = 0,
+    MainTableViewCustomRowZFPlayer = 0,
 };
 
-static NSString * const CellTitles[2][5] = {
+static NSString * const CellTitles[2][6] = {
     [MainTableViewSectionThirdParty] = {
         [MainTableViewThirdPartyRowAFNetworking]    = @"AFNetworking(Web Request)",
         [MainTableViewThirdPartyRowICarousel]       = @"iCarousel(轮播库)",
         [MainTableViewThirdPartyRowMJPhotoBrowser]  = @"MJPhotoBrowser(图片预览)",
         [MainTableViewThirdPartyRowDynamicLoad]     = @"ZipArchive(文件解压/APP内动态升级)",
         [MainTableViewThirdPartyRowJazzHands]       = @"JazzHands(交互动画)",
+        [MainTableViewCustomRowZFPlayer]              = @"ZFPlayer(播放器)",
     },
     
     [MainTableViewSectionCustom] = {
@@ -45,13 +47,14 @@ static NSString * const CellTitles[2][5] = {
     },
 };
 
-static NSString * const CellSubTitles[2][5] = {
+static NSString * const CellSubTitles[2][6] = {
     [MainTableViewSectionThirdParty] = {
         [MainTableViewThirdPartyRowAFNetworking]    = @"aFNetworkingViewController",
         [MainTableViewThirdPartyRowICarousel]       = @"iCarouselViewController",
         [MainTableViewThirdPartyRowMJPhotoBrowser]  = @"MJPhotoBrowserViewController",
         [MainTableViewThirdPartyRowDynamicLoad]     = @"DynamicLoadViewController",
-        //    [MainTableViewThirdPartyRowJazzHands] = @"",
+        [MainTableViewThirdPartyRowJazzHands]       = @"",
+        [MainTableViewCustomRowZFPlayer]            = @"ZFMoviePlayerViewController",
     },
     [MainTableViewSectionCustom] = {
 //        [MainTableViewCustomRowPlayer]              = @"XDSVideoPlayerViewController",

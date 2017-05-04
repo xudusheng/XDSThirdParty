@@ -49,6 +49,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ZFPlayer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>iCarousel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,22 +67,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>346EDB1A1B6AAE026562D98AFEBC3FD3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>4262BBA69037616CAFAC960466AF77B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>71C60BE4C5A80FC31B0D00310B52B02C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7A683A303A2A2D63A81083C9AD8E2C79</key>
+		<key>530CD6CAFA33FF7F940ABA334AB23073</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,7 +87,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C20E80F391C0258E58B7A2FDDCAF1981</key>
+		<key>A4EA3AF351B8B21E13D851C4F7EC6F0E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AA8A8BF2EABB515AD5C91EBD6CAA2860</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CB7B75E62586ED4DADFE573B20E423D3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,7 +107,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FC3927863155E261E5D00BB6252BDAD7</key>
+		<key>DEF51CD9064ABAD4F8D62EAE5977179D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB7F4F49CE06700231C40109173345B1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

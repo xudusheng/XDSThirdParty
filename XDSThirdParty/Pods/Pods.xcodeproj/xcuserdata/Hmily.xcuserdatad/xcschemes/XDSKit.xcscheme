@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '346EDB1A1B6AAE026562D98AFEBC3FD3'
+               BlueprintIdentifier = 'DEF51CD9064ABAD4F8D62EAE5977179D'
                BlueprintName = 'XDSKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libXDSKit.a'>

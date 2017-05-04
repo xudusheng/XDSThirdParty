@@ -51,6 +51,7 @@
 		A269A02A1E0153140083B333 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A269A0281E0153140083B333 /* LaunchScreen.storyboard */; };
 		A269A0371E0154350083B333 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A269A0361E0154350083B333 /* MainTableViewController.m */; };
 		A269A03A1E0155540083B333 /* iCarouselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A269A0391E0155540083B333 /* iCarouselViewController.m */; };
+		A28A6B3C1EBBE81000659555 /* ZFMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A6B3A1EBBE81000659555 /* ZFMoviePlayerViewController.m */; };
 		A28CF9331E5D5E0E002C3FCC /* XDSThirdPartyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A28CF9321E5D5E0E002C3FCC /* XDSThirdPartyTests.m */; };
 		A28CF93C1E5D6121002C3FCC /* RequestTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A28CF93B1E5D6121002C3FCC /* RequestTestCase.m */; };
 		A28CF9441E5D65F8002C3FCC /* XDSThirdPartyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A28CF9431E5D65F8002C3FCC /* XDSThirdPartyUITests.m */; };
@@ -245,6 +246,8 @@
 		A269A0361E0154350083B333 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		A269A0381E0155540083B333 /* iCarouselViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarouselViewController.h; sourceTree = "<group>"; };
 		A269A0391E0155540083B333 /* iCarouselViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarouselViewController.m; sourceTree = "<group>"; };
+		A28A6B391EBBE81000659555 /* ZFMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMoviePlayerViewController.h; sourceTree = "<group>"; };
+		A28A6B3A1EBBE81000659555 /* ZFMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMoviePlayerViewController.m; sourceTree = "<group>"; };
 		A28CF9301E5D5E0E002C3FCC /* XDSThirdPartyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XDSThirdPartyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28CF9321E5D5E0E002C3FCC /* XDSThirdPartyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDSThirdPartyTests.m; sourceTree = "<group>"; };
 		A28CF9341E5D5E0E002C3FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -639,6 +642,7 @@
 				A2DEFDD81E8760EB0030F5E0 /* MainNavigationController.m */,
 				A269A0351E0154350083B333 /* MainTableViewController.h */,
 				A269A0361E0154350083B333 /* MainTableViewController.m */,
+				A28A6B351EBBE7ED00659555 /* ZFPlayer */,
 				99D922181E8B53250052467C /* CustomView */,
 				A26444AF1E6E501D005FD7B7 /* DynamicLoadInApp */,
 				A226ED351E4B037A00B69CFD /* AFNetworking */,
@@ -704,6 +708,39 @@
 				A2A2F0A81E01772A0006BD5B /* iCarouselTableView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A28A6B351EBBE7ED00659555 /* ZFPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A28A6B361EBBE7ED00659555 /* Model */,
+				A28A6B371EBBE7ED00659555 /* View */,
+				A28A6B381EBBE7ED00659555 /* ViewController */,
+			);
+			path = ZFPlayer;
+			sourceTree = "<group>";
+		};
+		A28A6B361EBBE7ED00659555 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A28A6B371EBBE7ED00659555 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A28A6B381EBBE7ED00659555 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A28A6B391EBBE81000659555 /* ZFMoviePlayerViewController.h */,
+				A28A6B3A1EBBE81000659555 /* ZFMoviePlayerViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		A28CF9311E5D5E0E002C3FCC /* XDSThirdPartyTests */ = {
@@ -1407,6 +1444,7 @@
 				A2BFC5221E037A460060C191 /* NSData+ImageContentType.m in Sources */,
 				A2BFC5241E037A460060C191 /* SDWebImageCompat.m in Sources */,
 				A2BFC56A1E038EC50060C191 /* MJPhotoBrowserCollectionViewCell.m in Sources */,
+				A28A6B3C1EBBE81000659555 /* ZFMoviePlayerViewController.m in Sources */,
 				A2BFC5641E037FA90060C191 /* MJPhotoBrowserViewController.m in Sources */,
 				A2BFC5211E037A460060C191 /* MJPhotoView.m in Sources */,
 				A26444DF1E6E55E4005FD7B7 /* ZipArchive.mm in Sources */,

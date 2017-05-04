@@ -19,6 +19,7 @@ target 'XDSThirdParty' do
     
     pod 'AFNetworking', '~> 3.1.0'
     
+    pod 'ZFPlayer', '~> 2.1.3'
     
     #动态代码注入，用于实时渲染UI界面而不需要重新编译工程
     #pod 'dyci', :git => 'https://github.com/DyCI/dyci-main.git'

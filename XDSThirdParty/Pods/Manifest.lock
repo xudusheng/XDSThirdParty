@@ -22,6 +22,8 @@ PODS:
   - XDSKit (0.1.2)
   - XDSModuleManager (0.1.0)
   - XDSShellProject (0.1.4)
+  - ZFPlayer (2.1.3):
+    - Masonry
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
@@ -33,6 +35,7 @@ DEPENDENCIES:
   - XDSKit
   - XDSModuleManager
   - XDSShellProject
+  - ZFPlayer (~> 2.1.3)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -44,7 +47,8 @@ SPEC CHECKSUMS:
   XDSKit: a0777c70acef4549815a1e82e87e36ce2c0d2c33
   XDSModuleManager: 894eca470a7a7a6825746dea6c8057a39702c7ef
   XDSShellProject: 126b399dd48dd0ee0f3d8e1d26d4b4dda1023ba3
+  ZFPlayer: 8dc82b4508fbba4ee59d0304c52e30f8b3390244
 
-PODFILE CHECKSUM: 8d117491043e7fdaad851036ef17342755d08e53
+PODFILE CHECKSUM: d4a400d8903edb319d0f9f47f088422fe387fb2b
 
 COCOAPODS: 1.2.0

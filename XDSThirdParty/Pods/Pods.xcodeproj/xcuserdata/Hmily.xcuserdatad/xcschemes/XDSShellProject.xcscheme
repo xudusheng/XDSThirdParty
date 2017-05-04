@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'FC3927863155E261E5D00BB6252BDAD7'
+               BlueprintIdentifier = '530CD6CAFA33FF7F940ABA334AB23073'
                BlueprintName = 'XDSShellProject'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libXDSShellProject.a'>

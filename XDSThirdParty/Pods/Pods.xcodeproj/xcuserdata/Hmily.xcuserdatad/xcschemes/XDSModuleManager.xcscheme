@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7A683A303A2A2D63A81083C9AD8E2C79'
+               BlueprintIdentifier = 'AA8A8BF2EABB515AD5C91EBD6CAA2860'
                BlueprintName = 'XDSModuleManager'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libXDSModuleManager.a'>

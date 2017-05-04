@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainTableViewController : UITableViewController
+@interface MainTableViewController : UITableViewController{
+    NSString * _name;
+}
 
+@property (strong, nonatomic, readonly) NSString *isread;
 
 @end
