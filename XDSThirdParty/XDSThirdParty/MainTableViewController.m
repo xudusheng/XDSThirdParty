@@ -39,11 +39,9 @@ static NSString * const CellTitles[2][6] = {
         [MainTableViewThirdPartyRowMJPhotoBrowser]  = @"MJPhotoBrowser(图片预览)",
         [MainTableViewThirdPartyRowDynamicLoad]     = @"ZipArchive(文件解压/APP内动态升级)",
         [MainTableViewThirdPartyRowJazzHands]       = @"JazzHands(交互动画)",
-        [MainTableViewCustomRowZFPlayer]              = @"ZFPlayer(播放器)",
     },
     
     [MainTableViewSectionCustom] = {
-        [MainTableViewCustomRowPlayer]              = @"AVPlayer(自定义播放器样式)",
     },
 };
 
@@ -54,11 +52,9 @@ static NSString * const CellSubTitles[2][6] = {
         [MainTableViewThirdPartyRowMJPhotoBrowser]  = @"MJPhotoBrowserViewController",
         [MainTableViewThirdPartyRowDynamicLoad]     = @"DynamicLoadViewController",
         [MainTableViewThirdPartyRowJazzHands]       = @"",
-        [MainTableViewCustomRowZFPlayer]            = @"ZFMoviePlayerViewController",
     },
     [MainTableViewSectionCustom] = {
-//        [MainTableViewCustomRowPlayer]              = @"XDSVideoPlayerViewController",
-        [MainTableViewCustomRowPlayer]              = @"VideoListViewController",
+
     },
 };
 
