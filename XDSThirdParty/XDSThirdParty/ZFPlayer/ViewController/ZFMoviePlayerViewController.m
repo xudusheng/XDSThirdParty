@@ -30,10 +30,10 @@
         make.height.mas_equalTo(200);
     }];
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"mp4"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"fenghuaxueyue" ofType:@"mp4"];
     NSURL *videoURL = [NSURL fileURLWithPath:path];
     ZFPlayerModel *playerModel                  = [[ZFPlayerModel alloc] init];
-    playerModel.title            = @"第一集";
+    playerModel.title            = @"风花雪月";
     playerModel.videoURL         = videoURL;
     playerModel.placeholderImage = [UIImage imageNamed:@"loading_bgView1"];
     playerModel.fatherView       = self.fatherView;
@@ -57,7 +57,7 @@
     // _playerView.playerLayerGravity = ZFPlayerLayerGravityResize;
     
     // 打开下载功能（默认没有这个功能）
-    self.playerView.hasDownload    = YES;
+    self.playerView.hasDownload    = NO;
     
     // 打开预览图
     self.playerView.hasPreviewView = YES;
@@ -65,18 +65,18 @@
 }
 
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"3" ofType:@"mp4"];
-    NSURL *videoURL = [NSURL fileURLWithPath:path];
-    ZFPlayerModel *playerModel                  = [[ZFPlayerModel alloc] init];
-    playerModel.title            = @"第三集";
-    playerModel.videoURL         = videoURL;
-    playerModel.placeholderImage = [UIImage imageNamed:@"loading_bgView1"];
-    playerModel.fatherView       = self.fatherView;
-    
-    [self.playerView resetPlayer];
-    [self.playerView playerControlView:nil playerModel:playerModel];
-
-}
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"3" ofType:@"mp4"];
+//    NSURL *videoURL = [NSURL fileURLWithPath:path];
+//    ZFPlayerModel *playerModel                  = [[ZFPlayerModel alloc] init];
+//    playerModel.title            = @"第三集";
+//    playerModel.videoURL         = videoURL;
+//    playerModel.placeholderImage = [UIImage imageNamed:@"loading_bgView1"];
+//    playerModel.fatherView       = self.fatherView;
+//    
+//    [self.playerView resetPlayer];
+//    [self.playerView playerControlView:nil playerModel:playerModel];
+//
+//}
 
 @end

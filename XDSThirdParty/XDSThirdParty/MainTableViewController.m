@@ -10,86 +10,74 @@
 #import "iCarouselViewController.h"
 #import "MJPhotoBrowserViewController.h"
 
-typedef NS_ENUM(NSUInteger, MainTableViewSection) {
-    MainTableViewSectionThirdParty = 0,
-    MainTableViewSectionCustom,
-};
+@interface XDSRowModel : NSObject
+@property (copy, nonatomic) NSString *title;
+@property (copy, nonatomic) NSString *subTitle;
+@property (copy, nonatomic) NSString *className;
+@end
+@implementation XDSRowModel
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key {
+    NSLog(@"undefinedKey = %@", key);
+}
+@end
 
-static NSString * const SectionTitles[] = {
-    [MainTableViewSectionThirdParty] = @"第三方库",
-    [MainTableViewSectionCustom] = @"自定义",
-};
-typedef NS_ENUM(NSUInteger, MainTableViewThirdPartyRow) {
-    MainTableViewThirdPartyRowAFNetworking = 0,
-    MainTableViewThirdPartyRowICarousel,
-    MainTableViewThirdPartyRowMJPhotoBrowser,
-    MainTableViewThirdPartyRowDynamicLoad,
-    MainTableViewThirdPartyRowJazzHands,
-};
-
-typedef NS_ENUM(NSUInteger, MainTableViewCustomRow) {
-    MainTableViewCustomRowPlayer = 0,
-    MainTableViewCustomRowZFPlayer = 0,
-};
-
-static NSString * const CellTitles[2][6] = {
-    [MainTableViewSectionThirdParty] = {
-        [MainTableViewThirdPartyRowAFNetworking]    = @"AFNetworking(Web Request)",
-        [MainTableViewThirdPartyRowICarousel]       = @"iCarousel(轮播库)",
-        [MainTableViewThirdPartyRowMJPhotoBrowser]  = @"MJPhotoBrowser(图片预览)",
-        [MainTableViewThirdPartyRowDynamicLoad]     = @"ZipArchive(文件解压/APP内动态升级)",
-        [MainTableViewThirdPartyRowJazzHands]       = @"JazzHands(交互动画)",
-    },
+@interface XDSSectionModel : NSObject
+@property (copy, nonatomic) NSString *title;
+@property (copy, nonatomic) NSArray<XDSRowModel*> *rowModels;
+@end
+@implementation XDSSectionModel
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key {
+    NSLog(@"undefinedKey = %@", key);
+    if (![value isKindOfClass:[NSArray class]] || ![key isEqualToString:@"rows"]) {
+        return;
+    }
     
-    [MainTableViewSectionCustom] = {
-    },
-};
+    NSMutableArray *rowModels = [NSMutableArray arrayWithCapacity:0];
+    for (NSDictionary *aRow in (NSArray *)value) {
+        XDSRowModel *rowModel = [[XDSRowModel alloc] init];
+        [rowModel setValuesForKeysWithDictionary:aRow];
+        [rowModels addObject:rowModel];
+    }
+    self.rowModels = rowModels;
+}
+@end
 
-static NSString * const CellSubTitles[2][6] = {
-    [MainTableViewSectionThirdParty] = {
-        [MainTableViewThirdPartyRowAFNetworking]    = @"aFNetworkingViewController",
-        [MainTableViewThirdPartyRowICarousel]       = @"iCarouselViewController",
-        [MainTableViewThirdPartyRowMJPhotoBrowser]  = @"MJPhotoBrowserViewController",
-        [MainTableViewThirdPartyRowDynamicLoad]     = @"DynamicLoadViewController",
-        [MainTableViewThirdPartyRowJazzHands]       = @"",
-    },
-    [MainTableViewSectionCustom] = {
 
-    },
-};
-
-@interface MainTableViewController ()@end
+@interface MainTableViewController ()
+@property (nonatomic, copy) NSArray<XDSSectionModel*> *dataSource;
+@end
 
 @implementation MainTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController.navigationBar setTranslucent:NO];
+    [self dataInit];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return sizeof(SectionTitles)/sizeof(SectionTitles[0]);
+    return self.dataSource.count;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    NSInteger rows = 0;
-    NSString * title = CellTitles[section][rows];
-    while (title) {
-        rows++;
-        title = CellTitles[section][rows];
-    }
-    return rows;
+    XDSSectionModel *sectionModel = self.dataSource[section];
+    return sectionModel.rowModels.count;
 }
-
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    XDSSectionModel *sectionModel = self.dataSource[section];
+    return sectionModel.title;
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString * cellId = @"MainTableViewCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
     }
-
-    NSString * title = CellTitles[indexPath.section][indexPath.row];
-    NSString * subTitle = CellSubTitles[indexPath.section][indexPath.row];
+    
+    XDSSectionModel *sectionModel = self.dataSource[indexPath.section];
+    XDSRowModel *rowModel = sectionModel.rowModels[indexPath.row];
+    NSString * title = rowModel.title;
+    NSString * subTitle = rowModel.subTitle;
     cell.textLabel.text = title;
     cell.detailTextLabel.text = subTitle;
     return cell;
@@ -97,7 +85,9 @@ static NSString * const CellSubTitles[2][6] = {
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSString * className = CellSubTitles[indexPath.section][indexPath.row];
+    XDSSectionModel *sectionModel = self.dataSource[indexPath.section];
+    XDSRowModel *rowModel = sectionModel.rowModels[indexPath.row];
+    NSString * className = rowModel.className;
     if (className) {
         Class class = NSClassFromString(className);
         UIViewController * controller = [[class alloc] init];
@@ -107,4 +97,59 @@ static NSString * const CellSubTitles[2][6] = {
     }
 }
 
+- (void)dataInit {
+    NSArray *dataSource = @[
+                            @{
+                                @"title":@"UI相关",
+                                @"rows":@[
+                                        @{@"title":@"iCarousel(轮播库)",
+                                          @"subTitle":@"iCarouselViewController",
+                                          @"className":@"iCarouselViewController"
+                                          },
+                                        @{@"title":@"MJPhotoBrowser(图片预览)",
+                                          @"subTitle":@"MJPhotoBrowserViewController",
+                                          @"className":@"MJPhotoBrowserViewController"
+                                          },
+                                        @{@"title":@"ZipArchive(文件解压/APP内动态升级)",
+                                          @"subTitle":@"DynamicLoadViewController",
+                                          @"className":@"DynamicLoadViewController"
+                                          },
+                                        @{@"title":@"JazzHands(交互动画)",
+                                          @"subTitle":@"",
+                                          @"className":@""
+                                          },
+                                        ]
+                                
+                                },
+                            @{
+                                @"title":@"功能相关",
+                                @"rows":@[
+                                        @{@"title":@"ZFPlayer(视频播放器)",
+                                          @"subTitle":@"ZFMoviePlayerViewController",
+                                          @"className":@"ZFMoviePlayerViewController"
+                                          }
+                                        ]
+                                
+                                },
+                            @{
+                                @"title":@"算法相关",
+                                @"rows":@[
+                                        @{@"title":@"可视化排序",
+                                          @"subTitle":@"XDSVisualSortViewController",
+                                          @"className":@"XDSVisualSortViewController"
+                                          },
+                                        ]
+                                
+                                },
+                            ];
+    
+    
+    NSMutableArray *sections = [NSMutableArray arrayWithCapacity:0];
+    for (NSDictionary *aData in dataSource) {
+        XDSSectionModel *sectionModel = [[XDSSectionModel alloc] init];
+        [sectionModel setValuesForKeysWithDictionary:aData];
+        [sections addObject:sectionModel];
+    }
+    self.dataSource = sections;
+}
 @end

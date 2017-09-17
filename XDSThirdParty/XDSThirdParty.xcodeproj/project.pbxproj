@@ -91,6 +91,11 @@
 		A2BFC5701E0392F20060C191 /* MJPhotoBrowserImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BFC56F1E0392F20060C191 /* MJPhotoBrowserImageModel.m */; };
 		A2DEFDD91E8760EB0030F5E0 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DEFDD81E8760EB0030F5E0 /* MainNavigationController.m */; };
 		A2E7871F1E515A3C008123F0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E7871E1E515A3C008123F0 /* AVFoundation.framework */; };
+		FCD815DF1F6BAB87007988AC /* fenghuaxueyue.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FCD815DE1F6BAB87007988AC /* fenghuaxueyue.mp4 */; };
+		FCD815EC1F6BB476007988AC /* XDSVisualSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD815EA1F6BB476007988AC /* XDSVisualSortViewController.m */; };
+		FCD815ED1F6BB476007988AC /* XDSVisualSortViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCD815EB1F6BB476007988AC /* XDSVisualSortViewController.xib */; };
+		FCD815F01F6BBA06007988AC /* XDSRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD815EF1F6BBA06007988AC /* XDSRectangle.m */; };
+		FCD815F31F6BBC00007988AC /* XDSSortClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD815F21F6BBC00007988AC /* XDSSortClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -267,6 +272,14 @@
 		A2DEFDD71E8760EB0030F5E0 /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
 		A2DEFDD81E8760EB0030F5E0 /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
 		A2E7871E1E515A3C008123F0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FCD815DE1F6BAB87007988AC /* fenghuaxueyue.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fenghuaxueyue.mp4; sourceTree = "<group>"; };
+		FCD815E91F6BB476007988AC /* XDSVisualSortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSVisualSortViewController.h; sourceTree = "<group>"; };
+		FCD815EA1F6BB476007988AC /* XDSVisualSortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSVisualSortViewController.m; sourceTree = "<group>"; };
+		FCD815EB1F6BB476007988AC /* XDSVisualSortViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XDSVisualSortViewController.xib; sourceTree = "<group>"; };
+		FCD815EE1F6BBA06007988AC /* XDSRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSRectangle.h; sourceTree = "<group>"; };
+		FCD815EF1F6BBA06007988AC /* XDSRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSRectangle.m; sourceTree = "<group>"; };
+		FCD815F11F6BBC00007988AC /* XDSSortClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSSortClass.h; sourceTree = "<group>"; };
+		FCD815F21F6BBC00007988AC /* XDSSortClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSSortClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +436,7 @@
 				A2DEFDD81E8760EB0030F5E0 /* MainNavigationController.m */,
 				A269A0351E0154350083B333 /* MainTableViewController.h */,
 				A269A0361E0154350083B333 /* MainTableViewController.m */,
+				FCD815E01F6BB2F6007988AC /* VisualSort */,
 				A28A6B351EBBE7ED00659555 /* ZFPlayer */,
 				A26444AF1E6E501D005FD7B7 /* DynamicLoadInApp */,
 				A226ED351E4B037A00B69CFD /* AFNetworking */,
@@ -493,6 +507,7 @@
 		A28A6B351EBBE7ED00659555 /* ZFPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				FCD815DE1F6BAB87007988AC /* fenghuaxueyue.mp4 */,
 				A28A6B361EBBE7ED00659555 /* Model */,
 				A28A6B371EBBE7ED00659555 /* View */,
 				A28A6B381EBBE7ED00659555 /* ViewController */,
@@ -828,6 +843,36 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FCD815E01F6BB2F6007988AC /* VisualSort */ = {
+			isa = PBXGroup;
+			children = (
+				FCD815F11F6BBC00007988AC /* XDSSortClass.h */,
+				FCD815F21F6BBC00007988AC /* XDSSortClass.m */,
+				FCD815E71F6BB476007988AC /* View */,
+				FCD815E81F6BB476007988AC /* ViewController */,
+			);
+			path = VisualSort;
+			sourceTree = "<group>";
+		};
+		FCD815E71F6BB476007988AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCD815EE1F6BBA06007988AC /* XDSRectangle.h */,
+				FCD815EF1F6BBA06007988AC /* XDSRectangle.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCD815E81F6BB476007988AC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FCD815E91F6BB476007988AC /* XDSVisualSortViewController.h */,
+				FCD815EA1F6BB476007988AC /* XDSVisualSortViewController.m */,
+				FCD815EB1F6BB476007988AC /* XDSVisualSortViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -898,11 +943,10 @@
 				TargetAttributes = {
 					A269A0161E0153140083B333 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 85W725W7AQ;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplePay = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -955,6 +999,7 @@
 				A2A2F0BE1E01A5400006BD5B /* 0.jpg in Resources */,
 				A269A02A1E0153140083B333 /* LaunchScreen.storyboard in Resources */,
 				A2A2F0E11E024A920006BD5B /* blankpage_image_Sleep@2x.png in Resources */,
+				FCD815ED1F6BB476007988AC /* XDSVisualSortViewController.xib in Resources */,
 				A2A2F0E01E024A920006BD5B /* blankpage_image_loadFail@2x.png in Resources */,
 				A2A2F0C31E01A5400006BD5B /* 2.jpg in Resources */,
 				A269A0271E0153140083B333 /* Assets.xcassets in Resources */,
@@ -967,6 +1012,7 @@
 				A2A2F0BF1E01A5400006BD5B /* 1.jpg in Resources */,
 				A2A2F0DF1E024A920006BD5B /* blankpage_image_Hi@2x.png in Resources */,
 				A2BFC5321E037A460060C191 /* SVProgressHUD.bundle in Resources */,
+				FCD815DF1F6BAB87007988AC /* fenghuaxueyue.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1041,9 +1087,11 @@
 			files = (
 				A269A01F1E0153140083B333 /* AppDelegate.m in Sources */,
 				A2BFC5351E037A460060C191 /* YLGIFImage.m in Sources */,
+				FCD815EC1F6BB476007988AC /* XDSVisualSortViewController.m in Sources */,
 				A26444DC1E6E55E4005FD7B7 /* mztools.c in Sources */,
 				A2BFC51B1E037A460060C191 /* MJPhoto.m in Sources */,
 				A269A01C1E0153140083B333 /* main.m in Sources */,
+				FCD815F31F6BBC00007988AC /* XDSSortClass.m in Sources */,
 				A2A2F0D61E0246A70006BD5B /* EaseBlankPageView.m in Sources */,
 				A2BFC52F1E037A460060C191 /* UIView+WebCacheOperation.m in Sources */,
 				A2BFC5331E037A460060C191 /* SVProgressHUD.m in Sources */,
@@ -1093,6 +1141,7 @@
 				A2BFC52D1E037A460060C191 /* UIImageView+HighlightedWebCache.m in Sources */,
 				A2A2F0AF1E019B880006BD5B /* MultiTaskManagerViewController.m in Sources */,
 				A2A2F0D31E02450C0006BD5B /* UIView+Common.m in Sources */,
+				FCD815F01F6BBA06007988AC /* XDSRectangle.m in Sources */,
 				99D922281E8B59960052467C /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1236,15 +1285,17 @@
 			baseConfigurationReference = 5B67D5563E0CE7BEBC1CF8B4 /* Pods-XDSThirdParty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = XDSThirdParty/XDSThirdParty.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 85W725W7AQ;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jiepeng Zheng (P7MYHR66R7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jiepeng Zheng (P7MYHR66R7)";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = XDSThirdParty/PrefixHeader.pch;
 				INFOPLIST_FILE = XDSThirdParty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youmi.youse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e20e7920-cd13-4e93-95c0-5cae77e0ad50";
+				PROVISIONING_PROFILE_SPECIFIER = develop_new;
 			};
 			name = Debug;
 		};
@@ -1253,15 +1304,17 @@
 			baseConfigurationReference = 960AA33AC422DE470F89258C /* Pods-XDSThirdParty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = XDSThirdParty/XDSThirdParty.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 85W725W7AQ;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jiepeng Zheng (P7MYHR66R7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jiepeng Zheng (P7MYHR66R7)";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = XDSThirdParty/PrefixHeader.pch;
 				INFOPLIST_FILE = XDSThirdParty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youmi.youse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e20e7920-cd13-4e93-95c0-5cae77e0ad50";
+				PROVISIONING_PROFILE_SPECIFIER = develop_new;
 			};
 			name = Release;
 		};
